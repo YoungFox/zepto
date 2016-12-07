@@ -91,3 +91,43 @@ li{
 .box-shadow{
 	box-shadow: 0 0 4px 
 }
+
+
+.detail .nav > li > a{
+	padding: 9px 15px;
+	color: #646464;
+	border-radius: 0;
+	margin: 0;
+}
+.detail .nav-tabs > li.active > a, .detail .nav-tabs > li.active > a:hover, .detail .nav-tabs > li.active > a:focus{
+	border: 0;
+	color: #e60012;
+	border-bottom: 3px solid #e60012;
+}
+.detail .nav-tabs > li.active > a{
+	position: relative;
+}
+.detail .nav-tabs > li.active > a:after{
+	display: block;
+	position: absolute;
+	content: '';
+    width: 0;
+    height: 0;
+    bottom: -6px;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+   
+.detail .nav-tabs{
+	border-bottom: 1px solid #c5cbd1;
+}
+.detail .btn{
+	float: right;
+	margin-left: 6px;
+}

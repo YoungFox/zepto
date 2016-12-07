@@ -21,8 +21,7 @@
 	<li><a>应用安全分析</a></li>
 	<li class="active">分析详情</li>
 </ol>
-<div>
-	<!-- Nav tabs -->
+<!-- <div>
 	<ul class="nav nav-tabs nav-head" role="tablist">
 	<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
 	<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
@@ -30,13 +29,12 @@
 	<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
 	</ul>
 
-	<!-- Tab panes -->
 	<div class="tab-content">
 	<div role="tabpanel" class="tab-pane active" id="home">1</div>
 	<div role="tabpanel" class="tab-pane" id="profile">2</div>
 	<div role="tabpanel" class="tab-pane" id="messages">3</div>
 	<div role="tabpanel" class="tab-pane" id="settings">4</div>
-</div>
+</div> -->
 
 </div>
 <section class="bd">
@@ -71,30 +69,69 @@
 	</div>
 	<div class="detail">
 		<section class="det-header g-clearfix">
-			<div class="bug-i-wrap h-wrap"></div>
-			<div class="malicious-i-wrap h-wrap"></div>
+			<div class="bug-i-wrap h-wrap">
+				<h5>共检测出<span>7<span>个漏洞</h5>
+				<ul class="h-img-list g-clearfix">
+					<li class="img-item">高危漏洞<span>4</span></li>
+					<li class="img-item">高危漏洞<span>4</span></li>
+					<li class="img-item">高危漏洞<span>4</span></li>
+				</ul>
+			</div>
+			<div class="problem-i-wrap h-wrap">
+				<h5>总共检测出恶意行为<span>7<span>个</h5>
+				<ul class="h-img-list g-clearfix">
+					<li class="img-item">高危问题<span>4</span></li>
+					<li class="img-item">高危问题<span>4</span></li>
+					<li class="img-item">高危问题<span>4</span></li>
+				</ul>
+			</div>
 		</section>
 		<section class="det-content">
 			<div>
 
-			<!-- Nav tabs -->
-			<ul class="nav nav-tabs nav-head" role="tablist">
-			<li role="presentation" class="active"><a href="#home1" aria-controls="home1" role="tab" data-toggle="tab">Home1</a></li>
-			<li role="presentation"><a href="#profile1" aria-controls="profile1" role="tab" data-toggle="tab">Profile1</a></li>
-			<li role="presentation"><a href="#messages1" aria-controls="messages1" role="tab" data-toggle="tab">Messages1</a></li>
-			<li role="presentation"><a href="#settings1" aria-controls="settings1" role="tab" data-toggle="tab">Settings1</a></li>
-			</ul>
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs nav-head adv-nav" role="tablist">
+				<li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">*不良内容</a></li>
+				<li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">*数据存储安全</a></li>
+				<li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">*数据运行安全</a></li>
+				<li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">*数据传输安全</a></li>
+				<li role="presentation"><a href="#tab5" aria-controls="tab5" role="tab" data-toggle="tab">*敏感行为</a></li>
+				<li role="presentation"><a href="#tab6" aria-controls="tab6" role="tab" data-toggle="tab">*漏洞扫描</a></li>
+				</ul>
 
-			<!-- Tab panes -->
-			<div class="tab-content">
-			<div role="tabpanel" class="tab-pane active tab-pane-wrap" id="home1">
-				<section class="tab-pane-s pro-pie-wrap"></section>
-				<section class="tab-pane-s all-pro-tabs"></section>
-			</div>
-			<div role="tabpanel" class="tab-pane tab-pane-wrap" id="profile1">2</div>
-			<div role="tabpanel" class="tab-pane tab-pane-wrap" id="messages1">3</div>
-			<div role="tabpanel" class="tab-pane tab-pane-wrap" id="settings1">4</div>
-			</div>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active tab-pane-wrap" id="tab1">
+						<section class="tab-pane-s pro-pie-wrap"></section>
+						<section class="tab-pane-s all-pro-tabs">
+							<div>
+
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs nav-head" role="tablist">
+							<li role="presentation" class="active"><a href="#tab11" aria-controls="tab11" role="tab" data-toggle="tab">*全部问题</a></li>
+							<li role="presentation"><a href="#tab12" aria-controls="tab12" role="tab" data-toggle="tab">*高危问题</a></li>
+							<li role="presentation"><a href="#tab13" aria-controls="tab13" role="tab" data-toggle="tab">*中危问题</a></li>
+							<li role="presentation"><a href="#tab14" aria-controls="tab14" role="tab" data-toggle="tab">*低危问题</a></li>
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active tab-pane-wrap" id="tab11">
+								</div>
+								<div role="tabpanel" class="tab-pane tab-pane-wrap" id="tab12">2</div>
+								<div role="tabpanel" class="tab-pane tab-pane-wrap" id="tab13">3</div>
+								<div role="tabpanel" class="tab-pane tab-pane-wrap" id="tab14">4</div>
+							</div>
+
+						</div>
+						</section>
+					</div>
+					<div role="tabpanel" class="tab-pane tab-pane-wrap" id="tab2">2</div>
+					<div role="tabpanel" class="tab-pane tab-pane-wrap" id="tab3">3</div>
+					<div role="tabpanel" class="tab-pane tab-pane-wrap" id="tab4">4</div>
+					<div role="tabpanel" class="tab-pane tab-pane-wrap" id="tab5">5</div>
+					<div role="tabpanel" class="tab-pane tab-pane-wrap" id="tab6">6</div>
+				</div>
 
 			</div>
 		</section>

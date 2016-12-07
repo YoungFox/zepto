@@ -46,6 +46,8 @@
 .app-brief{
 	padding: 0 14px;
 	background: #fff;
+	height: 222px;
+	overflow: hidden;
 }
 .app-bri-item{
 	color: #999;
@@ -100,10 +102,13 @@
 	flex: 1;
 	background: #fff;
 }
+.h-wrap h5{
+	text-align: center;
+}
 .bug-i-wrap{
 	margin-right: 8px;
 }
-.malicious-i-wrap{
+.problem-i-wrap{
 	margin-left: 8px;
 }
 .nav-head{
@@ -112,8 +117,8 @@
 	background: #eff2f4;
 }
 .nav-head > li > a{
-	height: 52px;
-	line-height: 30px;
+	/*height: 52px;
+	line-height: 30px;*/
 }
 .tab-pane-wrap{
 	display: flex;
@@ -142,4 +147,49 @@
 }
 .all-pro-tabs{
 	flex: 1;
+}
+
+.adv-nav li.active  a, .adv-nav li.active a:hover, .adv-nav li.active a:focus{
+	border: 0;
+	color: #375dd1!important;
+	border-bottom: 3px solid #375dd1!important;
+}
+.h-img-list{
+	padding-left: 22px;
+	margin-top: 20px;
+}
+.h-img-list .img-item{
+	width: 110px;
+	height: 110px;
+	padding-top: 73px;
+	float: left;
+	margin-right: 32px;
+	border: 1px solid #dd6770;
+	border-radius: 2px;
+	background: url(../img/bug-3.png) no-repeat;
+	background-size: contain;
+	text-align: center;
+	line-height: 35px;
+}
+.h-img-list .img-item:nth-of-type(2){
+	border: 1px solid #e8a768;
+	background: url(../img/bug-2.png) no-repeat;
+	background-size: contain;
+}
+.h-img-list .img-item:nth-of-type(3){
+	border: 1px solid #f8cc34;
+	background: url(../img/bug-1.png) no-repeat;
+	background-size: contain;
+}
+.problem-i-wrap .img-item{
+	background: url(../img/problem-3.png) no-repeat;
+	background-size: contain;
+}
+.problem-i-wrap .img-item:nth-of-type(2){
+	background: url(../img/problem-2.png) no-repeat;
+	background-size: contain;
+}
+.problem-i-wrap .img-item:nth-of-type(3){
+	background: url(../img/problem-1.png) no-repeat;
+	background-size: contain;
 }
