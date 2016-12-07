@@ -1,0 +1,150 @@
+.bd{
+	margin: 10px 20px;
+	display: flex;
+	align-items: stretch;
+	/*height: 670px;*/
+}
+.brief{
+	width: 220px;
+	/*height: 100%;*/
+	margin-right: 8px;
+	background: #fff;
+}
+.detail{
+	flex: 1;
+	height: 100%;
+}
+.breadcrumb{
+	margin: 0;
+	padding: 18px 20px 0;
+	background: #dde6ec;
+}
+.det-header{
+	margin-bottom: 6px;
+	height: 64px;
+	background: #eff2f4;
+}
+.det-content{
+	background: #faf9fa;
+}
+.app-img-wrap{
+	width: 100%;
+	height: 164px;
+	background: #eff2f4;
+	padding: 26px 60px 0;
+}
+.app-img{
+	width: 100px;
+	height: 100px;
+}
+.app-name{
+	text-align: center;
+	font-size: 16px;
+	margin: 0;
+	padding-top: 8px;
+}
+.app-brief{
+	padding: 0 14px;
+}
+.app-bri-item{
+	color: #999;
+	padding: 12px 0 0;
+	font-size: 14px;
+}
+.app-txt{
+	font-weight: bold;
+	padding-left: 6px;
+	color: #000;
+}
+.app-chart-wrap{
+	
+}
+#container{
+	height: 180px;
+	width: 180px;
+}
+.upload-form{
+	float: left;
+	height: 64px;
+	padding-top: 14px;
+}
+.det-header .btn{
+	float: right;
+}
+.upload-form .form-control{
+	width: 164px;
+	height: 38px;
+}
+.upload-label{
+	padding: 0 10px 0 22px;
+}
+.upload-btn{
+	width: 92px;
+	height: 38px;
+	margin-left: 6px;
+}
+.btn-generate,.btn-record{
+	width: 106px;
+	height: 38px;
+	margin-top: 14px;
+}
+.btn-generate{
+	margin-right: 14px;
+}
+.btn-record{
+	margin-right: 7px;
+}
+.work-flow{
+	height: 158px;
+	background: url(../img/workflow.png) no-repeat;
+	background-position: 24px 24px;
+}
+.analysis-wrap{
+	padding: 0 15px;
+}
+.analysis-title{
+	background: #eff2f4;
+	height: 46px;
+	/*margin: 0 15px;*/
+	border-bottom: 1px solid #d7e2e8;
+	line-height: 45px;
+	border-left: 6px solid #82bbda;
+	padding-left: 12px;
+}
+.analysis-title .btn{
+	float: right;
+	margin-top: 9px;
+	height: 26px;
+	border: none;
+	line-height: 26px;
+	padding: 0 60px 0 25px;
+	background: none;
+}
+.analysis-content{
+	padding-top: 8px;
+}
+.analysis-content thead{
+	background: #fdfdfd;
+}
+.analysis-content .btn-danger{
+	height: 22px;
+	width: 44px;
+	padding: 0;
+	line-height: 22px;
+}
+.analysis-content tr{
+	height: 44px;
+}
+/*.analysis-content thead{
+	background: #
+}*/
+.analysis-content .table-striped > tbody > tr:nth-of-type(odd){
+	background: #fff;
+}
+.analysis-content .table-striped > tbody > tr:nth-of-type(even){
+	background: #fdfdfd;
+}
+.analysisi-right,.analysisi-bug .panel-body{
+	height: 352px;
+	overflow-y: scroll;
+}

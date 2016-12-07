@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="../resources/css/lib/bootstrap.css">
+	<link rel="stylesheet" href="../resources/css/common.css">
+	<link rel="stylesheet" href="../resources/css/home.css">
+</head>
+<body>
+<!-- 此处header是公用模块，前端没办法提成公用，可以用后台语言提取公用部分 -->
+<header class="hd g-clearfix">
+	<div class="logo"></div>
+	<a class="nav-btn log-out"><div class="btn-i">注销</div></a>
+	<a class="nav-btn user"><div class="btn-i"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div></a>
+	<a class="nav-btn statistics" href="./statistics.html"><div class="btn-i">统计分析</div></a>
+	<a class="nav-btn analysis" href="./analysis.html"><div class="btn-i">应用分析</div></a>
+</header>
+<section class="banner g-clearfix">
+	<div class="btn-wrap">
+		<a class="ban-btn"><div class="ban-ico"></div><div class="ban-txt">统计分析</div></a>
+	</div>
+	<div class="btn-wrap">
+		<a class="ban-btn"><div class="ban-ico"></div><div class="ban-txt">上传安卓应用</div></a>
+		<p class="ban-tips">目前只支持20M以下的Apk文件</p>
+	</div>
+</section>
+<section class="bd">
+	<div class="panel panel-default home-panel">
+		<div class="panel-heading g-clearfix">
+			<div class="pan-tab">已完成</div>
+			<div class="pan-tab active">未完成</div>
+
+			<form class="form-inline panel-form" actin="/">
+				<div class="form-group">
+					<label for="exampleInputName">应用名称</label>
+					<input type="text" class="form-control" id="exampleInputName" placeholder="在此输入...">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputTime">时间</label>
+					<input type="email" class="form-control" id="exampleInputTime" placeholder="">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputUser">用户名</label>
+					<input type="email" class="form-control" id="exampleInputUser" placeholder="在此输入...">
+				</div>
+				<button type="submit" class="btn btn-default btn-search">搜索</button>
+			</form>
+		</div>
+		<div class="panel-body home-panel-body">
+			<table class="table table-striped bd-table">
+			  	<thead> 
+			  		<tr>
+			  			<th>任务编号</th> 
+			  			<th>应用图标</th> 
+			  			<th>应用名称</th> 
+			  			<th>应用版本</th> 
+			  			<th>评分</th> 
+			  			<th>漏洞分析结果</th> 
+			  			<th>安全行为检测</th> 
+			  			<th>不良内容检测</th> 
+			  			<th>详情展示</th> 
+			  		</tr> 
+			  	</thead> 
+			  	<tbody> 
+			  		<tr> 
+			  			<td scope="row">1</td> 
+			  			<td><img src="../resources/img/appico.png" alt="" class="app-img"></td> 
+			  			<td>Otto</td> 
+			  			<td>@mdo</td> 
+			  			<td>@mdo</td> 
+			  			<td>@mdo</td> 
+			  			<td>@mdo</td> 
+			  			<td>@mdo</td> 
+			  			<td><button type="button" class="btn btn-info btn-check">查看</button></td> 
+			  		</tr> 
+			  	</tbody>
+			</table>
+		</div>
+	</div>
+</section>
+<footer class="ft">
+	<nav aria-label="Page navigation">
+	  <ul class="pagination">
+	    <li>
+	      <a href="#" aria-label="Previous">
+	        <span aria-hidden="true">上一页</span>
+	      </a>
+	    </li>
+	    <li><a href="#">1</a></li>
+	    <li><a href="#">2</a></li>
+	    <li><a href="#">3</a></li>
+	    <li><a href="#">4</a></li>
+	    <li><a href="#">5</a></li>
+	    <li>
+	      <a href="#" aria-label="Next">
+	        <span aria-hidden="true">下一页</span>
+	      </a>
+	    </li>
+	  </ul>
+	</nav>
+</footer>
+<script src="../resources/js/lib/jquery.js"></script>
+<script src="../resources/js/lib/bootstrap.min.js"></script>
+<script>
+	console.log($);
+</script>
+</body>
+</html>

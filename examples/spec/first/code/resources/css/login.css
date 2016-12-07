@@ -1,0 +1,62 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background: url(../img/login-bg.jpg) no-repeat;
+	background-size: cover;
+	min-height: 550px;
+}
+.login-wrap{
+	width: 1048px;
+	height: 550px;
+	margin: 0 auto;
+	padding-top: 120px;
+	background: url(../img/login-intro.png) no-repeat;
+	background-position: 0 120px;
+}
+.panel-default{
+	width: 426px;
+	margin-left: 760px;
+	background: #ebf6fd;
+}
+.panel-heading{
+	height: 62px;
+	background: #ebf6fd!important;
+	padding: 0;
+	line-height: 62px;
+	border: none;
+}
+.panel-heading h4{
+	line-height: 62px;
+	margin: 0 20px;
+	border-bottom: 1px solid #bfc7cb;
+}
+.panel-body{
+	padding: 0 20px;
+}
+.form-group{
+	margin-top: 18px;
+}
+.btn-info{
+	width: 100%;
+	height: 48px;
+	background: #347bdb;
+	line-height: 48px;
+	padding: 0;
+	color: #fff;
+	font-size: 16px;
+	margin-top: 34px;
+}
+.new-user-wrap{
+	height: 110px;
+	line-height: 110px;
+	text-align: center;
+}
+.form-control{
+	height: 36px;
+	box-shadow: none;
+}
+.forget-pass{
+	float: right;
+}

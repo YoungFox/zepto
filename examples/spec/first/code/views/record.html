@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>分析详情</title>
+	<link rel="stylesheet" href="../resources/css/lib/bootstrap.css">
+	<link rel="stylesheet" href="../resources/css/common.css">
+	<link rel="stylesheet" href="../resources/css/record.css">
+</head>
+<body>
+<!-- 此处header是公用模块，前端没办法提成公用，可以用后台语言提取公用部分 -->
+<header class="hd g-clearfix">
+	<div class="logo"></div>
+	<a class="nav-btn log-out"><div class="btn-i">注销</div></a>
+	<a class="nav-btn user"><div class="btn-i"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div></a>
+	<a class="nav-btn statistics" href="./statistics.html"><div class="btn-i">统计分析</div></a>
+	<a class="nav-btn analysis" href="./analysis.html"><div class="btn-i">应用分析</div></a>
+</header>
+<ol class="breadcrumb">
+	<li><a href="./home.html">主页</a></li>
+	<li class="active">软件漏洞分析</li>
+	<li class="active">安卓应用分析</li>
+	<li class="active">分析详情</li>
+</ol>
+<section class="bd">
+	<div class="brief">
+		<div class="app-img-wrap">
+			<img class="app-img" src="../resources/img/aqylogo.png" alt="">
+			<p class="app-name">爱奇艺</p>
+		</div>
+		<div class="app-brief">
+			<div class="app-bri-item app-v-wrap">应用版本<span class="app-txt version-txt">1.8.0</span></div>
+			<div class="app-bri-item app-s-wrap">应用大小<span class="app-txt size-txt">12.22MB</span></div>
+			<div class="app-bri-item app-r-wrap">安全指纹结果</div>
+			<div class="app-chart-wrap">
+				<div id="container"></div>
+			</div>
+		</div>
+	</div>
+	<div class="detail">
+		<div>
+
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+			<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+			<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+			<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+		<div role="tabpanel" class="tab-pane active" id="home">
+			<div class="pro-list">
+				<table class="table table-striped bd-table">
+				  	<thead> 
+				  		<tr>
+				  			<th>序号</th> 
+				  			<th>问题概要</th> 
+				  			<th>问题描述</th> 
+				  			<th>证据截图</th> 
+				  			<th>危害等级</th> 
+				  		</tr> 
+				  	</thead> 
+				  	<tbody> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td>淫秽色情</td> 
+				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+				  			<td><img src="" alt=""></td> 
+				  			<td>
+				  				<button type="submit" class="btn btn-danger">高危</button>
+				  			</td> 
+				  		</tr> 
+				  		
+				  	</tbody>
+				</table>
+				<button type="submit" class="btn btn-bottom btn-success">高危</button>
+				<button type="submit" class="btn btn-bottom btn-primary">高危</button>
+			</div>
+			<form class="form-horizontal content-form">
+			  <div class="form-group">
+			    <label for="inputEmail3" class="col-sm-2 control-label">问题概要</label>
+			    <div class="col-sm-10">
+			      <textarea  type="email"  class="form-control" id="inputEmail3" rows="3"></textarea>
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputPassword3" class="col-sm-2 control-label">问题描述</label>
+			    <div class="col-sm-10">
+			      <textarea  type="email"  class="form-control" id="inputPassword3" rows="3"></textarea>
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputPassword3" class="col-sm-2 control-label">证据截图</label>
+			    <div class="col-sm-10">
+			      <input type="file" class="form-control">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			  	<label for="inputLevel" class="col-sm-2 control-label">危害等级</label>
+			  	<div class="col-sm-10">
+				  	<select class="form-control" id="inputLevel">
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					</select>
+				</div>
+			  </div>
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="submit" class="btn btn-success">提交</button>
+			      <button type="submit" class="btn btn-primray">重置</button>
+			    </div>
+			  </div>
+			</form>
+		</div>
+		<div role="tabpanel" class="tab-pane" id="profile">...</div>
+		<div role="tabpanel" class="tab-pane" id="messages">...</div>
+		<div role="tabpanel" class="tab-pane" id="settings">...</div>
+		</div>
+
+		</div>
+	</div>
+</section>
+<footer class="ft">
+	
+</footer>
+<script src="../resources/js/lib/jquery.js"></script>
+<script src="../resources/js/lib/bootstrap.min.js"></script>
+<script src="../resources/js/lib/highcharts.js"></script>
+<script src="../resources/js/record.js"></script>
+</body>
+</html>

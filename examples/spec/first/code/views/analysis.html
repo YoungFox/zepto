@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>应用分析</title>
+	<link rel="stylesheet" href="../resources/css/lib/bootstrap.css">
+	<link rel="stylesheet" href="../resources/css/common.css">
+	<link rel="stylesheet" href="../resources/css/analysis.css">
+</head>
+<body>
+<!-- 此处header是公用模块，前端没办法提成公用，可以用后台语言提取公用部分 -->
+<header class="hd g-clearfix">
+	<div class="logo"></div>
+	<a class="nav-btn log-out"><div class="btn-i">注销</div></a>
+	<a class="nav-btn user"><div class="btn-i"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div></a>
+	<a class="nav-btn statistics" href="./statistics.html"><div class="btn-i">统计分析</div></a>
+	<a class="nav-btn analysis" href="#"><div class="btn-i">应用分析</div></a>
+</header>
+<ol class="breadcrumb">
+	<li><a href="./home.html">主页</a></li>
+	<li class="active">应用分析</li>
+</ol>
+<section class="bd">
+	<div class="brief">
+		<div class="app-img-wrap">
+			<img class="app-img" src="../resources/img/aqylogo.png" alt="">
+			<p class="app-name">爱奇艺</p>
+		</div>
+		<div class="app-brief">
+			<div class="app-bri-item app-v-wrap">应用版本<span class="app-txt version-txt">1.8.0</span></div>
+			<div class="app-bri-item app-s-wrap">应用大小<span class="app-txt size-txt">12.22MB</span></div>
+			<div class="app-bri-item app-r-wrap">安全指纹结果</div>
+			<div class="app-chart-wrap">
+				<div id="container"></div>
+			</div>
+		</div>
+	</div>
+	<div class="detail">
+		<section class="det-header g-clearfix">
+			<form class="form-inline upload-form">
+				<div class="form-group">
+					<label for="file-input" class="upload-label">文件上传</label>
+					<input type="file" class="form-control" id="file-input" placeholder="添加文件">
+				</div>
+				<button type="submit" class="btn btn-default upload-btn">上传</button>
+			</form>
+			<a type="button" href="./record.html" class="btn btn-primary btn-record">手工录入</a>
+			<a type="button" class="btn btn-primary btn-generate">生成报告</a>
+		</section>
+		<section class="det-content">
+			<div class="work-flow"></div>
+			<ul class="analysis-wrap analysisi-right-wrap">
+				<li class="analysis-title g-clearfix">
+					应用权限
+					<button type="button" class="btn btn-default btn-refresh">刷新</button>
+					<button type="button" class="btn btn-default btn-unfold">展开查看</button>
+				</li>
+				<li class="analysis-content analysisi-right">
+					<table class="table table-striped bd-table">
+				  	<thead> 
+				  		<tr>
+				  			<th>权限名称</th> 
+				  			<th>危险程度</th> 
+				  			<th>权限描述</th> 
+				  		</tr> 
+				  	</thead> 
+				  	<tbody> 
+				  		<tr> 
+				  			<td scope="row">android.permission.READ_SMS</td> 
+				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+				  			<td>读取短信内容</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">android.permission.READ_SMS</td> 
+				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+				  			<td>读取短信内容</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">android.permission.READ_SMS</td> 
+				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+				  			<td>读取短信内容</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">android.permission.READ_SMS</td> 
+				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+				  			<td>读取短信内容</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">android.permission.READ_SMS</td> 
+				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+				  			<td>读取短信内容</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">android.permission.READ_SMS</td> 
+				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+				  			<td>读取短信内容</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">android.permission.READ_SMS</td> 
+				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+				  			<td>读取短信内容</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">android.permission.READ_SMS</td> 
+				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+				  			<td>读取短信内容</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">android.permission.READ_SMS</td> 
+				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+				  			<td>读取短信内容</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">android.permission.READ_SMS</td> 
+				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+				  			<td>读取短信内容</td> 
+				  		</tr> 
+				  	</tbody>
+				</table>
+				</li>
+			</ul>
+			<ul class="analysis-wrap analysis-bug-wrap">
+				<li class="analysis-title g-clearfix">
+					应用漏洞
+					<button type="button" class="btn btn-default btn-refresh">刷新</button>
+					<button type="button" class="btn btn-default btn-unfold">展开查看</button>
+				</li>
+				<li class="analysis-content analysisi-bug">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<ul class="nav nav-pills">
+							<li role="presentation" class="active"><a href="#">*功能库漏洞</a></li>
+							<li role="presentation"><a href="#">*非功能库漏洞</a></li>
+						</ul>
+					</div>
+					<div class="panel-body">
+						<table class="table table-striped bd-table">
+						  	<thead> 
+						  		<tr>
+						  			<th>库名称</th> 
+						  			<th>漏洞类型</th> 
+						  			<th>漏洞信息</th> 
+						  			<th>疑似路径</th> 
+						  			<th>是否验证</th>
+						  		</tr> 
+						  	</thead> 
+						  	<tbody> 
+						  		<tr> 
+						  			<td scope="row">android.READ_SMS</td> 
+						  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+						  			<td>读取短信内容</td> 
+						  			<td>root://</td> 
+						  			<td>否</td> 
+						  		</tr> 
+						  		<tr> 
+						  			<td scope="row">android.READ_SMS</td> 
+						  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+						  			<td>读取短信内容</td> 
+						  			<td>root://</td> 
+						  			<td>否</td> 
+						  		</tr> 
+						  		<tr> 
+						  			<td scope="row">android.READ_SMS</td> 
+						  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+						  			<td>读取短信内容</td> 
+						  			<td>root://</td> 
+						  			<td>否</td> 
+						  		</tr> 
+						  		<tr> 
+						  			<td scope="row">android.READ_SMS</td> 
+						  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+						  			<td>读取短信内容</td> 
+						  			<td>root://</td> 
+						  			<td>否</td> 
+						  		</tr> 
+						  	</tbody>
+						</table>
+					</div>
+				</div>
+				</li>
+			</ul>
+			<ul class="analysis-wrap analysis-bug-wrap">
+				<li class="analysis-title g-clearfix">
+					敏感行为
+					<button type="button" class="btn btn-default btn-refresh">刷新</button>
+					<button type="button" class="btn btn-default btn-unfold">展开查看</button>
+				</li>
+				<li class="analysis-content analysisi-bug">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<ul class="nav nav-pills">
+							<li role="presentation" class="active"><a href="#">*日志信息</a></li>
+							<li role="presentation"><a href="#">*敏感路径</a></li>
+						</ul>
+					</div>
+					<div class="panel-body">
+						<table class="table table-striped bd-table">
+						  	<thead> 
+						  		<tr>
+						  			<th>敏感行为</th> 
+						  			<th>日志信息</th> 
+						  		</tr> 
+						  	</thead> 
+						  	<tbody> 
+						  		<tr> 
+						  			<td scope="row">android.READ_SMS</td> 
+						  			<td>root://</td> 
+						  		</tr> 
+						  		<tr> 
+						  			<td scope="row">android.READ_SMS</td> 
+						  			<td>root://</td> 
+						  		</tr> 
+						  		<tr> 
+						  			<td scope="row">android.READ_SMS</td> 
+						  			<td>root://</td> 
+						  		</tr> 
+						  		<tr> 
+						  			<td scope="row">android.READ_SMS</td> 
+						  			<td>root://</td> 
+						  		</tr> 
+						  		<tr> 
+						  			<td scope="row">android.READ_SMS</td> 
+						  			<td>root://</td> 
+						  		</tr> 
+						  	</tbody>
+						</table>
+					</div>
+				</div>
+				</li>
+			</ul>
+			<ul class="analysis-wrap analysis-bug-wrap">
+				<li class="analysis-title g-clearfix">
+					泄露信息
+					<button type="button" class="btn btn-default btn-refresh">刷新</button>
+					<button type="button" class="btn btn-default btn-unfold">展开查看</button>
+				</li>
+				<li class="analysis-content analysisi-bug">
+				
+				</li>
+			</ul>
+			<ul class="analysis-wrap analysis-bug-wrap">
+				<li class="analysis-title g-clearfix">
+					大数据分析
+					<button type="button" class="btn btn-default btn-refresh">刷新</button>
+					<button type="button" class="btn btn-default btn-unfold">展开查看</button>
+				</li>
+				<li class="analysis-content analysisi-bug">
+				
+				</li>
+			</ul>
+		</section>
+	</div>
+</section>
+<footer class="ft">
+	
+</footer>
+<script src="../resources/js/lib/jquery.js"></script>
+<script src="../resources/js/lib/bootstrap.min.js"></script>
+<script src="../resources/js/lib/highcharts.js"></script>
+<script src="../resources/js/analysis.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>统计分析</title>
+	<link rel="stylesheet" href="../resources/css/lib/bootstrap.css">
+	<link rel="stylesheet" href="../resources/css/common.css">
+	<link rel="stylesheet" href="../resources/css/statistics.css">
+</head>
+<body>
+<!-- 此处header是公用模块，前端没办法提成公用，可以用后台语言提取公用部分 -->
+<header class="hd g-clearfix">
+	<div class="logo"></div>
+	<a class="nav-btn log-out"><div class="btn-i">注销</div></a>
+	<a class="nav-btn user"><div class="btn-i"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div></a>
+	<a class="nav-btn statistics" href="#"><div class="btn-i">统计分析</div></a>
+	<a class="nav-btn analysis" href="./analysis.html"><div class="btn-i">应用分析</div></a>
+</header>
+<ol class="breadcrumb">
+	<li><a href="./home.html">主页</a></li>
+	<li class="active">统计分析</li>
+</ol>
+<section class="bd">
+	<div class="brief">
+		<div class="panel panel-default">
+			<div class="panel-heading">最新恶意应用</div>
+			<div class="panel-body">
+				<ul class="app-list">
+					<li class="app-l-item g-clearfix"><span class="rank">1</span>系统工具（仿冒）<span class="app-type">聊天数据</span> </li>
+					<li class="app-l-item g-clearfix"><span class="rank">2</span>系统工具（仿冒）<span class="app-type">聊天数据</span> </li>
+					<li class="app-l-item g-clearfix"><span class="rank">3</span>系统工具（仿冒）<span class="app-type">聊天数据</span> </li>
+					<li class="app-l-item g-clearfix"><span class="rank-ele">【4】</span>系统工具（仿冒）<span class="app-type">聊天数据</span> </li>
+					<li class="app-l-item g-clearfix"><span class="rank-ele">【5】</span>系统工具（仿冒）<span class="app-type">聊天数据</span> </li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">最新恶意应用</div>
+			<div class="panel-body">
+				<ul class="app-list">
+					<li class="app-l-item g-clearfix"><span class="rank">1</span>系统工具（仿冒）<span class="app-type">聊天数据</span> </li>
+					<li class="app-l-item g-clearfix"><span class="rank">2</span>系统工具（仿冒）<span class="app-type">聊天数据</span> </li>
+					<li class="app-l-item g-clearfix"><span class="rank">3</span>系统工具（仿冒）<span class="app-type">聊天数据</span> </li>
+					<li class="app-l-item g-clearfix"><span class="rank-ele">【4】</span>系统工具（仿冒）<span class="app-type">聊天数据</span> </li>
+					<li class="app-l-item g-clearfix"><span class="rank-ele">【5】</span>系统工具（仿冒）<span class="app-type">聊天数据</span> </li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">最新恶意应用</div>
+			<div class="panel-body">
+				<ul class="app-list">
+					<li class="app-l-item g-clearfix"><span class="rank">1</span>系统工具（仿冒）<span class="app-type">聊天数据</span> </li>
+					<li class="app-l-item g-clearfix"><span class="rank">2</span>系统工具（仿冒）<span class="app-type">聊天数据</span> </li>
+					<li class="app-l-item g-clearfix"><span class="rank">3</span>系统工具（仿冒）<span class="app-type">聊天数据</span> </li>
+					<li class="app-l-item g-clearfix"><span class="rank-ele">【4】</span>系统工具（仿冒）<span class="app-type">聊天数据</span> </li>
+					<li class="app-l-item g-clearfix"><span class="rank-ele">【5】</span>系统工具（仿冒）<span class="app-type">聊天数据</span> </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="detail">
+		<section class="detail-t g-clearfix">
+			<div class="panel panel-default">
+				<div class="panel-heading">恶意行为
+					<i class="icon icon-save"></i>
+					<i class="icon icon-refresh"></i>
+					<i class="icon icon-catalog"></i>
+				</div>
+				<div class="panel-body">
+					<div id="container1" class="container"></div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">漏洞类型
+					<i class="icon icon-save"></i>
+					<i class="icon icon-refresh"></i>
+					<i class="icon icon-catalog"></i>
+				</div>
+				<div class="panel-body">
+					<div id="container2" class="container"></div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">不良内容行为
+					<i class="icon icon-save"></i>
+					<i class="icon icon-refresh"></i>
+					<i class="icon icon-catalog"></i>
+				</div>
+				<div class="panel-body">
+					<div id="container3" class="container"></div>
+				</div>
+			</div>
+		</section>
+		<section class="detail-b g-clearfix">
+			<div class="panel panel-default">
+				<div class="panel-heading">不良内容行为
+					<i class="icon icon-save"></i>
+					<i class="icon icon-refresh"></i>
+					<i class="icon icon-chart"></i>
+					<i class="icon icon-trend"></i>
+					<i class="icon icon-catalog"></i>
+				</div>
+				<div class="panel-body">
+					<div id="container4" class="container"></div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">不良内容行为
+					<i class="icon icon-save"></i>
+					<i class="icon icon-refresh"></i>
+					<i class="icon icon-chart"></i>
+					<i class="icon icon-trend"></i>
+					<i class="icon icon-catalog"></i>
+				</div>
+				<div class="panel-body">
+					<div id="container5" class="container"></div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">不良内容行为
+					<i class="icon icon-save"></i>
+					<i class="icon icon-refresh"></i>
+					<i class="icon icon-chart"></i>
+					<i class="icon icon-trend"></i>
+					<i class="icon icon-catalog"></i>
+				</div>
+				<div class="panel-body">
+					<div id="container6" class="container"></div>
+				</div>
+			</div>
+
+		</section>
+	</div>
+</section>
+<footer class="ft">
+	
+</footer>
+<script src="../resources/js/lib/jquery.js"></script>
+<script src="../resources/js/lib/bootstrap.min.js"></script>
+<script src="../resources/js/lib/highcharts.js"></script>
+<script src="../resources/js/statistics.js"></script>
+</body>
+</html>
