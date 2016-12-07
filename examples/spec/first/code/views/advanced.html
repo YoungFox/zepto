@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>应用分析</title>
+	<link rel="stylesheet" href="../resources/css/lib/bootstrap.css">
+	<link rel="stylesheet" href="../resources/css/common.css">
+	<link rel="stylesheet" href="../resources/css/advanced.css">
+</head>
+<body>
+<!-- 此处header是公用模块，前端没办法提成公用，可以用后台语言提取公用部分 -->
+<header class="hd g-clearfix">
+	<div class="logo"></div>
+	<a class="nav-btn log-out"><div class="btn-i">注销</div></a>
+	<a class="nav-btn user"><div class="btn-i"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div></a>
+	<a class="nav-btn statistics" href="./statistics.html"><div class="btn-i">统计分析</div></a>
+	<a class="nav-btn analysis" href="#"><div class="btn-i">应用分析</div></a>
+</header>
+<ol class="breadcrumb">
+	<li><a href="./home.html">主页</a></li>
+	<li><a>应用安全分析</a></li>
+	<li class="active">分析详情</li>
+</ol>
+<div>
+	<!-- Nav tabs -->
+	<ul class="nav nav-tabs nav-head" role="tablist">
+	<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+	<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+	<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+	<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+	<div role="tabpanel" class="tab-pane active" id="home">1</div>
+	<div role="tabpanel" class="tab-pane" id="profile">2</div>
+	<div role="tabpanel" class="tab-pane" id="messages">3</div>
+	<div role="tabpanel" class="tab-pane" id="settings">4</div>
+</div>
+
+</div>
+<section class="bd">
+	<div class="brief">
+		<div class="app-img-wrap">
+			<img class="app-img" src="../resources/img/aqylogo.png" alt="">
+			<p class="app-name">爱奇艺</p>
+		</div>
+		<div class="app-brief">
+			<div class="app-bri-item app-v-wrap">应用版本<span class="app-txt version-txt">1.8.0</span></div>
+			<div class="app-bri-item app-s-wrap">应用大小<span class="app-txt size-txt">12.22MB</span></div>
+			<div class="app-bri-item app-r-wrap">安全指纹结果</div>
+			<div class="app-chart-wrap">
+				<div id="container"></div>
+			</div>
+		</div>
+		<div class="panel panel-default d-auth-l">
+			<div class="panel-heading">
+				危险权限列表
+			</div>
+			<div class="panel-body">
+				<ul class="d-auth-list">
+					<li class="d-auth-i">读取短信内容</li>
+					<li class="d-auth-i">读取短信内容</li>
+					<li class="d-auth-i">读取短信内容</li>
+					<li class="d-auth-i">读取短信内容</li>
+					<li class="d-auth-i">读取短信内容</li>
+					<li class="d-auth-i">读取短信内容</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="detail">
+		<section class="det-header g-clearfix">
+			<div class="bug-i-wrap h-wrap"></div>
+			<div class="malicious-i-wrap h-wrap"></div>
+		</section>
+		<section class="det-content">
+			<div>
+
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs nav-head" role="tablist">
+			<li role="presentation" class="active"><a href="#home1" aria-controls="home1" role="tab" data-toggle="tab">Home1</a></li>
+			<li role="presentation"><a href="#profile1" aria-controls="profile1" role="tab" data-toggle="tab">Profile1</a></li>
+			<li role="presentation"><a href="#messages1" aria-controls="messages1" role="tab" data-toggle="tab">Messages1</a></li>
+			<li role="presentation"><a href="#settings1" aria-controls="settings1" role="tab" data-toggle="tab">Settings1</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active tab-pane-wrap" id="home1">
+				<section class="tab-pane-s pro-pie-wrap"></section>
+				<section class="tab-pane-s all-pro-tabs"></section>
+			</div>
+			<div role="tabpanel" class="tab-pane tab-pane-wrap" id="profile1">2</div>
+			<div role="tabpanel" class="tab-pane tab-pane-wrap" id="messages1">3</div>
+			<div role="tabpanel" class="tab-pane tab-pane-wrap" id="settings1">4</div>
+			</div>
+
+			</div>
+		</section>
+	</div>
+</section>
+<footer class="ft">
+	
+</footer>
+<script src="../resources/js/lib/jquery.js"></script>
+<script src="../resources/js/lib/bootstrap.min.js"></script>
+<script src="../resources/js/lib/highcharts.js"></script>
+<script src="../resources/js/advanced.js"></script>
+</body>
+</html>
