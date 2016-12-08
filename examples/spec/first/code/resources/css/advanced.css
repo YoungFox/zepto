@@ -193,3 +193,62 @@
 	background: url(../img/problem-1.png) no-repeat;
 	background-size: contain;
 }
+
+.b-c-panel{
+	height: 312px;
+	overflow: hidden;
+	border: 0;
+	background: : #fff;
+}
+.b-c-panel .panel-heading{
+	border: 0;
+	border-radius: 0;
+	background: #fff;
+}
+.b-c-panel .panel-body{
+	border: 0;
+}
+i.icon{
+	display: block;
+	float: right;
+	height: 20px;
+	margin-right: 12px;
+	width: 20px;
+	background: url(../img/icon.png) no-repeat;
+}
+.icon-catalog{
+	background-position: 0 -52px!important;
+}
+.icon-save{
+	background-position: 0 0!important;
+}
+.icon-refresh{
+	background-position: 0 -79px!important;
+}
+.icon-trend{
+	background-position: 0 -25px!important;
+}
+.icon-chart{
+	background-position: 0 -102px!important;
+}
+.container{
+	max-width: 300px;
+	height: 262px;
+}
+.all-pro-tabs .nav-head{
+	margin: 0;
+}
+.tab-pane .table{
+	background: #fff;
+	margin: 0;
+}
+
+.tab-pane .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #fdfdfd;
+}
+.tab-pane .table > thead > tr > th,.tab-pane .table-striped > tbody > tr{
+	border-bottom: 1px dashed #e3ebef;
+}
+.tab-pane .table > tbody > tr > td{
+	border-top: none;
+}

@@ -10,7 +10,7 @@
 <body>
 <!-- 此处header是公用模块，前端没办法提成公用，可以用后台语言提取公用部分 -->
 <header class="hd g-clearfix">
-	<div class="logo"></div>
+	<a class="logo" href="./home.html"></a>
 	<a class="nav-btn log-out"><div class="btn-i">注销</div></a>
 	<a class="nav-btn user"><div class="btn-i"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div></a>
 	<a class="nav-btn statistics" href="./statistics.html"><div class="btn-i">统计分析</div></a>
@@ -102,7 +102,18 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active tab-pane-wrap" id="tab1">
-						<section class="tab-pane-s pro-pie-wrap"></section>
+						<section class="tab-pane-s pro-pie-wrap">
+								<div class="panel panel-default b-c-panel">
+									<div class="panel-heading">
+										<i class="icon icon-save"></i>
+										<i class="icon icon-refresh"></i>
+										<i class="icon icon-catalog"></i>
+									</div>
+									<div class="panel-body">
+										<div id="container1" class="container"></div>
+									</div>
+								</div>
+						</section>
 						<section class="tab-pane-s all-pro-tabs">
 							<div>
 
@@ -117,6 +128,29 @@
 							<!-- Tab panes -->
 							<div class="tab-content">
 								<div role="tabpanel" class="tab-pane active tab-pane-wrap" id="tab11">
+									<table class="table table-striped bd-table">
+									  	<thead> 
+									  		<tr>
+									  			<th>序号</th> 
+									  			<th>问题概要</th> 
+									  			<th>问题描述</th> 
+									  			<th>证据截图</th> 
+									  			<th>危害等级</th> 
+									  		</tr> 
+									  	</thead> 
+									  	<tbody> 
+									  		<tr> 
+									  			<td scope="row">1</td> 
+									  			<td>淫秽色情</td> 
+									  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+									  			<td><img src="" alt=""></td> 
+									  			<td>
+									  				<button type="submit" class="btn btn-danger">高危</button>
+									  			</td> 
+									  		</tr> 
+									  		
+									  	</tbody>
+									</table>
 								</div>
 								<div role="tabpanel" class="tab-pane tab-pane-wrap" id="tab12">2</div>
 								<div role="tabpanel" class="tab-pane tab-pane-wrap" id="tab13">3</div>
