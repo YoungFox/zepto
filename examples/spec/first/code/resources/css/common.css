@@ -1,3 +1,7 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
 body{
 	min-width: 1180px;
 	background: #dde6ec;
@@ -130,4 +134,10 @@ li{
 .detail .btn{
 	float: right;
 	margin-left: 6px;
+}
+
+.common-bg{
+	background: url(../img/login-bg.jpg) no-repeat;
+	background-size: cover;
+	min-height: 550px;
 }

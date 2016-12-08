@@ -1,0 +1,51 @@
+.register-wrap{
+	width: 770px;
+	height: 550px;
+	margin: 40px auto 0;
+	background: #e9f5fa;
+}
+.panel-heading{
+	margin: 0 55px;
+	height: 70px;
+	text-align: center;
+	background: none!important;
+	border-bottom: 1px solid #3880e0!important;
+}
+.panel{
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+.panel-body{
+	width: 410px;
+	margin: 0 auto;
+}
+label{
+	padding-right: 0!important;
+}
+.btn-register{
+	width: 380px;
+	height: 50px;
+	background: #3981e1;
+	color: #fff;
+	margin-top: 60px;
+}
+.form-group{
+	margin-top: 20px;
+}
+.have-account{
+	float: right;
+}
+.s-code-wrap .form-control{
+	display: inline-block;
+	width: 190px;
+}
+.s-code-wrap .col-sm-9{
+	/*margin: 0 15px;
+	padding: 0;*/
+}
+.form-control{
+	border: 0;
+	border-radius: 0;
+	height: 38px;
+}
