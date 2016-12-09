@@ -141,3 +141,49 @@ li{
 	background-size: cover;
 	min-height: 550px;
 }
+
+.form-wrap{
+	width: 770px;
+	height: 550px;
+	margin: 40px auto 0;
+	background: #e9f5fa;
+}
+
+.form-wrap .panel-heading{
+	margin: 0 55px;
+	height: 66px;
+	line-height: 45px;
+	text-align: center;
+	background: none!important;
+	color: #2e75d3;
+	font-size: 24px;
+	border-bottom: 1px solid #3880e0!important;
+}
+.form-wrap .panel{
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+.form-wrap .panel-body{
+	width: 410px;
+	margin: 0 auto;
+}
+.form-wrap label{
+	padding-right: 0!important;
+	text-align: left!important;;;
+}
+.btn-submit-b{
+	width: 380px;
+	height: 50px;
+	background: #3981e1;
+	color: #fff;
+	margin-top: 45px;
+}
+.form-wrap .form-group{
+	margin-top: 20px;
+}
+.form-wrap .form-control{
+	border: 0;
+	border-radius: 0;
+	height: 38px;
+}

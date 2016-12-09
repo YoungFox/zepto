@@ -1,0 +1,48 @@
+.panel-heading .row{
+	height: 38px;
+	overflow: hidden;
+}
+.recover-wrap .panel-heading {
+    margin: 0 55px;
+    height: 126px;
+}
+.recover-wrap h4{
+	height: 60px;
+	line-height: 60px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 24px;
+}
+.bg-step{
+	display: block;
+	width: 168px;
+	height: 38px;
+	font-size: 14px;
+	color: #fff;
+	line-height: 38px;
+	background: #c9c9c9;
+}
+.step-done{
+	background: #3a82e3;
+}
+.row0{
+	height: 38px;
+	overflow: hidden;
+	padding: 0;
+}
+.row0 .row-item{
+	float: left;
+	height: 38px;
+}
+.row-item:nth-of-type(even){
+	width: 40px;
+	margin: 18px 6px 0;
+	border-top: 1px solid #b7bbbd;
+}
+.form-horizontal{
+	display: none;
+}
+.form-1{
+	display: block;
+}

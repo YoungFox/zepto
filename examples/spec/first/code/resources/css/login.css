@@ -42,8 +42,8 @@
 	margin-top: 34px;
 }
 .new-user-wrap{
-	height: 110px;
-	line-height: 110px;
+	height: 80px;
+	line-height: 80px;
 	text-align: center;
 }
 .form-control{
@@ -52,4 +52,32 @@
 }
 .forget-pass{
 	float: right;
+}
+.form-group .col{
+	padding: 0;
+}
+.code-img{
+	padding-left: 12px;
+}
+.form-control{
+	height: 40px;
+	border-radius: 0;
+	border: 1px solid #e5e5e5;
+}
+.new-user-wrap a:hover{
+	text-decoration: underline;
+}
+.try-user{
+	position: relative;
+	margin-right: 25px;
+}
+.try-user:after{
+	content: '';
+	height: 14px;
+	width: 1px;
+	background: #367ede;
+	display: block;
+	position: absolute;
+	right: -14px;
+	top: 1px;
 }

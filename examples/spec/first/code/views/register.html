@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>登录</title>
+	<title>注册</title>
 	<link rel="stylesheet" href="../resources/css/lib/bootstrap.css">
 	<link rel="stylesheet" href="../resources/css/common.css">
 	<link rel="stylesheet" href="../resources/css/register.css">
@@ -15,9 +15,9 @@
 		<a class="nav-btn statistics" href="./statistics.html"><div class="btn-i">统计分析</div></a>
 		<a class="nav-btn analysis" href="#"><div class="btn-i">应用分析</div></a> -->
 	</header>
-	<div class="register-wrap">
+	<div class="register-wrap form-wrap">
 		<div class="panel panel-default">
-		  <div class="panel-heading"><h4>欢迎加入</h4></div>
+		  <div class="panel-heading">欢迎加入</div>
 		  <div class="panel-body">
 				<form class="form-horizontal">
 				  <div class="form-group">
@@ -41,27 +41,29 @@
 				  <div class="form-group s-code-wrap">
 				    <label for="inputPhone3" class="col-sm-3 control-label">手机验证码:</label>
 				    <div class="col-sm-9">
+				    <section class="btn-text">
 				      <input type="text" class="form-control" id="inputPhone3" placeholder="手机验证码">
-				      <button type="button" class="btn btn-default">点击获取</button>
+				      <button type="button" class="btn btn-primary get-code-btn">点击获取</button>
+				      </section>
 				    </div>
 				  </div>
-				  <div class="form-group">
-				    <label for="inputPhone3" class="col-sm-3 control-label">验证码:</label>
-				    <div class="col-sm-6">
+				  <div class="form-group img-code-wrap">
+				    <label for="inputPhone3" class="col-sm-2 control-label">验证码:</label>
+				    <div class="col-sm-5 form-control-w">
 				      <input type="text" class="form-control" id="inputPhone3" placeholder="验证码">
 				    </div>
-				    <div class="col-sm-3">
-				      <img src="" alt="">
+				    <div class="col-sm-5">
+				      <img src="../resources/img/code-img.jpg" alt="" class="code-img">
 				    </div>
 				  </div>
 				  
 				  <div class="form-group">
 				    <div class="col-sm-12">
-				      <button type="submit" class="btn btn-default btn-register">注册</button>
+				      <button type="submit" class="btn btn-primary btn-submit-b btn-register">注册</button>
 				    </div>
 				  </div>
 				  <div>
-				  	<a href="" class="have-account">已有账号，直接登录></a>
+				  	<a href="./login.html" class="have-account">已有账号，直接登录></a>
 				  </div>
 				</form>
 		  </div>

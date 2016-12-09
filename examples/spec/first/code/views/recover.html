@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>找回密码</title>
+	<link rel="stylesheet" href="../resources/css/lib/bootstrap.css">
+	<link rel="stylesheet" href="../resources/css/common.css">
+	<link rel="stylesheet" href="../resources/css/recover.css">
+</head>
+<body class="common-bg">
+	<header class="hd g-clearfix">
+		<a class="logo" href="./home.html"></a>
+		<!-- <a class="nav-btn log-out"><div class="btn-i">注销</div></a> -->
+		<!-- <a class="nav-btn user"><div class="btn-i"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div></a>
+		<a class="nav-btn statistics" href="./statistics.html"><div class="btn-i">统计分析</div></a>
+		<a class="nav-btn analysis" href="#"><div class="btn-i">应用分析</div></a> -->
+	</header>
+	<div class="recover-wrap form-wrap">
+		<div class="panel panel-default">
+		  <div class="panel-heading"><h4>找回密码</h4>
+		  <ul class="row0 g-clearfix">
+		  	<li class="row-item">
+		  		<p  class="bg-primary bg-step step-done">填写注册邮箱</p>
+		  	</li>
+		  	<li class="row-item"></li>
+		  	<li class="row-item">
+		  		<p  class="bg-primary bg-step">邮箱验证</p>
+		  	</li>
+		  	<li class="row-item"></li>
+		  	<li class="row-item">
+		  		<p  class="bg-primary bg-step">设置新密码</p>
+		  	</li>
+		  </ul>
+		  </div>
+		  <div class="panel-body">
+				<form class="form-horizontal form-1">
+				  <div class="form-group">
+				    <label for="inputCruPass" class="col-sm-3 control-label">注册邮箱:</label>
+				    <div class="col-sm-9">
+				      <input type="email" class="form-control" id="inputCruPass" placeholder="请输入完整的邮箱账号">
+				    </div>
+				  </div>
+				  <div class="form-group img-code-wrap">
+				    <label for="inputCode" class="col-sm-3 control-label">验证码:</label>
+				    <div class="col-sm-4 form-control-w">
+				      <input type="text" class="form-control" id="inputCode" placeholder="验证码">
+				    </div>
+				    <div class="col-sm-5">
+				      <img src="../resources/img/code-img.jpg" alt="" class="code-img">
+				    </div>
+				  </div>
+				  
+				  <div class="form-group">
+				    <div class="col-sm-12">
+				      <button type="button" class="btn btn-primary btn-submit-b btn-next-1">下一步</button>
+				    </div>
+				  </div>
+				</form>
+
+
+				<form class="form-horizontal form-2">
+				  <div class="form-group">
+				    <label for="inputEmailCode" class="col-sm-3 control-label">邮箱验证码:</label>
+				    <div class="col-sm-9">
+				      <input type="text" class="form-control" id="inputEmailCode" placeholder="请输入完整的邮箱账号">
+				    </div>
+				  </div>
+				  
+				  <div class="form-group">
+				    <div class="col-sm-12">
+				      <button type="button" class="btn btn-primary btn-submit-b btn-next-2">下一步</button>
+				    </div>
+				  </div>
+				</form>
+
+				<form class="form-horizontal form-3">
+				  <div class="form-group">
+				    <label for="inputEmailCode" class="col-sm-3 control-label">新密码:</label>
+				    <div class="col-sm-9">
+				      <input type="password" class="form-control" id="inputEmailCode" placeholder="新密码">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputEmailCode" class="col-sm-3 control-label">确认密码:</label>
+				    <div class="col-sm-9">
+				      <input type="password" class="form-control" id="inputEmailCode" placeholder="确认密码">
+				    </div>
+				  </div>
+				  
+				  <div class="form-group">
+				    <div class="col-sm-12">
+				      <button type="submit" class="btn btn-primary btn-submit-b btn-complete">完成</button>
+				    </div>
+				  </div>
+				</form>
+		  </div>
+		</div>
+		
+	</div>
+</body>
+</html>

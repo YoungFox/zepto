@@ -1,0 +1,7 @@
+.change-wrap{
+	height: auto;
+	min-height: 460px;
+}
+.change-wrap label{
+	text-align: right;
+}
