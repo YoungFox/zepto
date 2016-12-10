@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>首页</title>
 	<link rel="stylesheet" href="../resources/css/lib/bootstrap.css">
+	<link rel="stylesheet" href="../resources/css/lib/bootstrap-datetimepicker.min.css">
 	<link rel="stylesheet" href="../resources/css/common.css">
 	<link rel="stylesheet" href="../resources/css/home.css">
 </head>
@@ -18,19 +19,22 @@
 </header>
 <section class="banner g-clearfix">
 	<div class="btn-wrap">
-		<a class="ban-btn"><div class="ban-ico"></div><div class="ban-txt">统计分析</div></a>
+		<a class="ban-btn"  href="./statistics.html"><div class="ban-ico"></div><div class="ban-txt">统计分析</div></a>
 	</div>
 	<div class="btn-wrap">
-		<a class="ban-btn"><div class="ban-ico"></div><div class="ban-txt">上传安卓应用</div></a>
-		<p class="ban-tips">目前只支持20M以下的Apk文件</p>
+		<a class="ban-btn"><div class="ban-ico"></div><input type="file" class="ban-txt ban-upload"><span class="up-txt">上传安卓应用</span></a>
+		<!-- <p class="ban-tips">目前只支持20M以下的Apk文件</p> -->
 	</div>
 </section>
 <section class="bd">
 	<div class="panel panel-default home-panel">
 		<div class="panel-heading g-clearfix">
-			<div class="pan-tab">已完成</div>
-			<div class="pan-tab active">未完成</div>
-
+			<ul class="nav nav-tabs" role="tablist">
+			    <li role="presentation" class="pan-tab active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">未完成</a></li>
+			    <li role="presentation" class="pan-tab"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">已完成</a></li>
+			   
+			</ul>
+			
 			<form class="form-inline panel-form" actin="/">
 				<div class="form-group">
 					<label for="exampleInputName">应用名称</label>
@@ -38,7 +42,7 @@
 				</div>
 				<div class="form-group">
 					<label for="exampleInputTime">时间</label>
-					<input type="email" class="form-control" id="exampleInputTime" placeholder="">
+					<input type="text" readonly class="form-control" id="exampleInputTime" placeholder="">
 				</div>
 				<div class="form-group">
 					<label for="exampleInputUser">用户名</label>
@@ -48,40 +52,91 @@
 			</form>
 		</div>
 		<div class="panel-body home-panel-body">
-			<table class="table table-striped bd-table">
-			  	<thead> 
-			  		<tr>
-			  			<th>任务编号</th> 
-			  			<th>应用图标</th> 
-			  			<th>应用名称</th> 
-			  			<th>应用版本</th> 
-			  			<th>评分</th> 
-			  			<th>漏洞分析结果</th> 
-			  			<th>安全行为检测</th> 
-			  			<th>不良内容检测</th> 
-			  			<th>详情展示</th> 
-			  		</tr> 
-			  	</thead> 
-			  	<tbody> 
-			  		<tr> 
-			  			<td scope="row">1</td> 
-			  			<td><img src="../resources/img/appico.png" alt="" class="app-img"></td> 
-			  			<td>Otto</td> 
-			  			<td>@mdo</td> 
-			  			<td>@mdo</td> 
-			  			<td>@mdo</td> 
-			  			<td>@mdo</td> 
-			  			<td>@mdo</td> 
-			  			<td><button type="button" class="btn btn-info btn-check">查看</button></td> 
-			  		</tr> 
-			  	</tbody>
-			</table>
+		<div class="tab-content">
+	    <div role="tabpanel" class="tab-pane active" id="home">
+	    	<table class="table table-striped bd-table">
+				  	<thead> 
+				  		<tr>
+				  			<th>任务编号</th> 
+				  			<th>应用图标</th> 
+				  			<th>应用名称</th> 
+				  			<th>应用版本</th> 
+				  			<th>应用大小</th> 
+				  			<th>开始时间</th> 
+				  			<th>详情展示</th> 
+				  		</tr> 
+				  	</thead> 
+				  	<tbody> 
+				  		<tr> 
+				  			<td scope="row">5000001</td> 
+				  			<td><img src="../resources/img/appico.png" alt="" class="app-img"></td> 
+				  			<td>WiFi万能钥匙</td> 
+				  			<td>2.1.5</td> 
+				  			<td>2.18MB</td> 
+				  			<td>2016-11-29  16:20:52</td> 
+				  			<td><a class="btn btn-info btn-check" href="./analysis.html">查看</a></td> 
+				  		</tr> 
+				  	</tbody>
+				</table>
+
+	    </div>
+	    <div role="tabpanel" class="tab-pane" id="profile">
+	    	<table class="table table-striped bd-table">
+				  	<thead> 
+				  		<tr>
+				  			<th>任务编号</th> 
+				  			<th>应用图标</th> 
+				  			<th>应用名称</th> 
+				  			<th>应用版本</th> 
+				  			<th>评分</th> 
+				  			<th>漏洞分析结果</th> 
+				  			<th>安全行为检测</th> 
+				  			<th>不良内容检测</th> 
+				  			<th>详情展示</th> 
+				  		</tr> 
+				  	</thead> 
+				  	<tbody> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td><img src="../resources/img/appico.png" alt="" class="app-img"></td> 
+				  			<td>Otto</td> 
+				  			<td>@mdo</td> 
+				  			<td><img src="../resources/img/s6.png" alt="" class="score-img"></td> 
+				  			<td>@mdo</td> 
+				  			<td>@mdo</td> 
+				  			<td>@mdo</td> 
+				  			<td><a class="btn btn-info btn-check">查看</a></td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td><img src="../resources/img/appico.png" alt="" class="app-img"></td> 
+				  			<td>Otto</td> 
+				  			<td>@mdo</td> 
+				  			<td><img src="../resources/img/s6.png" alt="" class="score-img"></td> 
+				  			<td>@mdo</td> 
+				  			<td>@mdo</td> 
+				  			<td>@mdo</td> 
+				  			<td><a class="btn btn-info btn-check">查看</a></td> 
+				  		</tr> 
+				  		
+				  	</tbody>
+				</table>
+
+	    	</div>
+	   
+	  	</div>
+			
 		</div>
 	</div>
 </section>
 <footer class="ft">
 	<nav aria-label="Page navigation">
 	  <ul class="pagination">
+	  	<li>
+	      <a href="#" aria-label="first">
+	        <span aria-hidden="true">首页</span>
+	      </a>
+	    </li>
 	    <li>
 	      <a href="#" aria-label="Previous">
 	        <span aria-hidden="true">上一页</span>
@@ -97,13 +152,20 @@
 	        <span aria-hidden="true">下一页</span>
 	      </a>
 	    </li>
+	    <li>
+	      <a href="#" aria-label="Last">
+	        <span aria-hidden="true">末页</span>
+	      </a>
+	    </li>
+	    <li class="total-page">共<em>5</em>页</li>
 	  </ul>
 	</nav>
 </footer>
 <script src="../resources/js/lib/jquery.js"></script>
 <script src="../resources/js/lib/bootstrap.min.js"></script>
+<script src="../resources/js/lib/bootstrap-datetimepicker.js"></script>
 <script>
-	console.log($);
+	$('#exampleInputTime').datetimepicker({format: 'yyyy-mm-dd hh:ii',autoclose: true,todayHighlight: true});
 </script>
 </body>
 </html>

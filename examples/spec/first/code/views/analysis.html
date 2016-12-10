@@ -34,107 +34,131 @@
 				<div id="container"></div>
 			</div>
 		</div>
+		<div class="panel panel-default d-auth-l">
+			<div class="panel-heading">
+				危险权限列表
+			</div>
+			<div class="panel-body">
+				<ul class="d-auth-list">
+					<li class="d-auth-i">读取短信内容<a href="" class="btn btn-danger">高危</a></li>
+					<li class="d-auth-i">读取短信内容<a href="" class="btn btn-danger">高危</a></li>
+					<li class="d-auth-i">读取短信内容<a href="" class="btn btn-danger">高危</a></li>
+					<li class="d-auth-i">读取短信内容<a href="" class="btn btn-danger">高危</a></li>
+					<li class="d-auth-i">读取短信内容<a href="" class="btn btn-danger">高危</a></li>
+					<li class="d-auth-i">读取短信内容<a href="" class="btn btn-danger">高危</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<div class="detail">
 		<section class="det-header g-clearfix">
 			<form class="form-inline upload-form">
 				<div class="form-group">
 					<label for="file-input" class="upload-label">文件上传</label>
-					<input type="file" class="form-control" id="file-input" placeholder="添加文件">
+					<input type="text" class="form-control" placeholder="添加文件" value="添加文件">
+					<input type="file" class="form-control" id="file-input" placeholder="添加文件" value="添加文件">
 				</div>
-				<button type="submit" class="btn btn-default upload-btn">上传</button>
+				<button type="submit" class="btn btn-default upload-btn"><i class="upload-icon"></i>上传</button>
 			</form>
-			<a type="button" href="./record.html" class="btn btn-primary btn-record">手工录入</a>
-			<a type="button" class="btn btn-primary btn-generate">生成报告</a>
+			<a type="button" href="./record.html" class="btn btn-primary btn-record"><i class="record-icon"></i>手工录入</a>
+			<a type="button" class="btn btn-success btn-generate"><i class="generate-icon"></i>生成报告</a>
 		</section>
 		<section class="det-content">
 			<div class="work-flow"></div>
-			<ul class="analysis-wrap analysisi-right-wrap">
-				<li class="analysis-title g-clearfix">
-					应用权限
-					<button type="button" class="btn btn-default btn-refresh">刷新</button>
-					<button type="button" class="btn btn-default btn-unfold">展开查看</button>
-				</li>
-				<li class="analysis-content analysisi-right">
-					<table class="table table-striped bd-table">
-				  	<thead> 
-				  		<tr>
-				  			<th>权限名称</th> 
-				  			<th>危险程度</th> 
-				  			<th>权限描述</th> 
-				  		</tr> 
-				  	</thead> 
-				  	<tbody> 
-				  		<tr> 
-				  			<td scope="row">android.permission.READ_SMS</td> 
-				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-				  			<td>读取短信内容</td> 
-				  		</tr> 
-				  		<tr> 
-				  			<td scope="row">android.permission.READ_SMS</td> 
-				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-				  			<td>读取短信内容</td> 
-				  		</tr> 
-				  		<tr> 
-				  			<td scope="row">android.permission.READ_SMS</td> 
-				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-				  			<td>读取短信内容</td> 
-				  		</tr> 
-				  		<tr> 
-				  			<td scope="row">android.permission.READ_SMS</td> 
-				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-				  			<td>读取短信内容</td> 
-				  		</tr> 
-				  		<tr> 
-				  			<td scope="row">android.permission.READ_SMS</td> 
-				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-				  			<td>读取短信内容</td> 
-				  		</tr> 
-				  		<tr> 
-				  			<td scope="row">android.permission.READ_SMS</td> 
-				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-				  			<td>读取短信内容</td> 
-				  		</tr> 
-				  		<tr> 
-				  			<td scope="row">android.permission.READ_SMS</td> 
-				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-				  			<td>读取短信内容</td> 
-				  		</tr> 
-				  		<tr> 
-				  			<td scope="row">android.permission.READ_SMS</td> 
-				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-				  			<td>读取短信内容</td> 
-				  		</tr> 
-				  		<tr> 
-				  			<td scope="row">android.permission.READ_SMS</td> 
-				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-				  			<td>读取短信内容</td> 
-				  		</tr> 
-				  		<tr> 
-				  			<td scope="row">android.permission.READ_SMS</td> 
-				  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-				  			<td>读取短信内容</td> 
-				  		</tr> 
-				  	</tbody>
-				</table>
-				</li>
-			</ul>
-			<ul class="analysis-wrap analysis-bug-wrap">
-				<li class="analysis-title g-clearfix">
-					应用漏洞
-					<button type="button" class="btn btn-default btn-refresh">刷新</button>
-					<button type="button" class="btn btn-default btn-unfold">展开查看</button>
-				</li>
-				<li class="analysis-content analysisi-bug">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<ul class="nav nav-pills">
-							<li role="presentation" class="active"><a href="#">*功能库漏洞</a></li>
-							<li role="presentation"><a href="#">*非功能库漏洞</a></li>
-						</ul>
-					</div>
-					<div class="panel-body">
-						<table class="table table-striped bd-table">
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			  <div class="panel panel-default analysis-wrap analysisi-right-wrap">
+			    <div class="panel-heading" role="tab" id="headingOne">
+			      <h4 class="panel-title">
+			        
+				        <p class="analysis-title g-clearfix">
+						应用权限
+						<!-- <a class="btn btn-default btn-refresh">刷新<i class="fresh-icon"></i></a> -->
+						<a role="button" class="btn btn-default btn-unfold" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">展开查看</a>
+						</p>
+			      </h4>
+			    </div>
+			    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			      <div class="panel-body">
+			        <table class="table bd-table">
+					  	<thead> 
+					  		<tr>
+					  			<th>权限名称</th> 
+					  			<th>危险程度</th> 
+					  			<th>权限描述</th> 
+					  		</tr> 
+					  	</thead> 
+					  	<tbody> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  	</tbody>
+					</table>
+			      </div>
+			    </div>
+			  </div>
+			  
+
+			<div class="panel panel-default analysis-wrap analysisi-right-wrap">
+			    <div class="panel-heading" role="tab" id="headingTwo">
+			      <h4 class="panel-title">
+			        
+				        <p class="analysis-title g-clearfix">
+						应用漏洞
+						<a class="btn btn-default btn-refresh">刷新<i class="fresh-icon"></i></a>
+						<a role="button" class="btn btn-default btn-unfold" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">展开查看</a>
+						</p>
+			      </h4>
+			    </div>
+			    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			      <div class="panel-body">
+			    	<table class="table table-striped bd-table">
 						  	<thead> 
 						  		<tr>
 						  			<th>库名称</th> 
@@ -175,18 +199,26 @@
 						  		</tr> 
 						  	</tbody>
 						</table>
-					</div>
-				</div>
-				</li>
-			</ul>
-			<ul class="analysis-wrap analysis-bug-wrap">
-				<li class="analysis-title g-clearfix">
-					敏感行为
-					<button type="button" class="btn btn-default btn-refresh">刷新</button>
-					<button type="button" class="btn btn-default btn-unfold">展开查看</button>
-				</li>
-				<li class="analysis-content analysisi-bug">
-				<div class="panel panel-default">
+			      </div>
+			    </div>
+			  </div>
+			
+			
+			<div class="panel panel-default analysis-wrap analysisi-right-wrap">
+			    <div class="panel-heading" role="tab" id="headingThree">
+			      <h4 class="panel-title">
+			        
+				        <p class="analysis-title g-clearfix">
+						敏感行为
+						<a class="btn btn-default btn-refresh">刷新<i class="fresh-icon"></i></a>
+						<a role="button" class="btn btn-default btn-unfold" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">展开查看</a>
+						</p>
+			      </h4>
+			    </div>
+			    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			      <div class="panel-body">
+			       
+					<div class="panel panel-default">
 					<div class="panel-heading">
 						<ul class="nav nav-pills">
 							<li role="presentation" class="active"><a href="#">*日志信息</a></li>
@@ -226,28 +258,168 @@
 						</table>
 					</div>
 				</div>
-				</li>
-			</ul>
-			<ul class="analysis-wrap analysis-bug-wrap">
-				<li class="analysis-title g-clearfix">
-					泄露信息
-					<button type="button" class="btn btn-default btn-refresh">刷新</button>
-					<button type="button" class="btn btn-default btn-unfold">展开查看</button>
-				</li>
-				<li class="analysis-content analysisi-bug">
+			      </div>
+			    </div>
+			  </div>
 				
-				</li>
-			</ul>
-			<ul class="analysis-wrap analysis-bug-wrap">
-				<li class="analysis-title g-clearfix">
-					大数据分析
-					<button type="button" class="btn btn-default btn-refresh">刷新</button>
-					<button type="button" class="btn btn-default btn-unfold">展开查看</button>
-				</li>
-				<li class="analysis-content analysisi-bug">
+			<div class="panel panel-default analysis-wrap analysisi-right-wrap">
+			    <div class="panel-heading" role="tab" id="headingFour">
+			      <h4 class="panel-title">
+			        
+				        <p class="analysis-title g-clearfix">
+						漏洞信息
+						<a class="btn btn-default btn-refresh">刷新<i class="fresh-icon"></i></a>
+						<a role="button" class="btn btn-default btn-unfold" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">展开查看</a>
+						</p>
+			      </h4>
+			    </div>
+			    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+			      <div class="panel-body">
+			        <table class="table bd-table">
+					  	<thead> 
+					  		<tr>
+					  			<th>权限名称</th> 
+					  			<th>危险程度</th> 
+					  			<th>权限描述</th> 
+					  		</tr> 
+					  	</thead> 
+					  	<tbody> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  	</tbody>
+					</table>
+			      </div>
+			    </div>
+			  </div>
 				
-				</li>
-			</ul>
+
+			<div class="panel panel-default analysis-wrap analysisi-right-wrap">
+			    <div class="panel-heading" role="tab" id="headingFive">
+			      <h4 class="panel-title">
+			        
+				        <p class="analysis-title g-clearfix">
+						大数据分析
+						<a class="btn btn-default btn-refresh">刷新<i class="fresh-icon"></i></a>
+						<a role="button" class="btn btn-default btn-unfold" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">展开查看</a>
+						</p>
+			      </h4>
+			    </div>
+			    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+			      <div class="panel-body">
+			        <table class="table bd-table">
+					  	<thead> 
+					  		<tr>
+					  			<th>权限名称</th> 
+					  			<th>危险程度</th> 
+					  			<th>权限描述</th> 
+					  		</tr> 
+					  	</thead> 
+					  	<tbody> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  		<tr> 
+					  			<td scope="row">android.permission.READ_SMS</td> 
+					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
+					  			<td>读取短信内容</td> 
+					  		</tr> 
+					  	</tbody>
+					</table>
+			      </div>
+			    </div>
+			  </div>
+
+			
 		</section>
 	</div>
 </section>

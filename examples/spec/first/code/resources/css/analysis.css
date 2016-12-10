@@ -67,6 +67,7 @@
 	float: left;
 	height: 64px;
 	padding-top: 14px;
+	position: relative;
 }
 .det-header .btn{
 	float: right;
@@ -79,23 +80,53 @@
 	padding: 0 10px 0 22px;
 }
 .upload-btn{
+	position: relative;
 	width: 92px;
 	height: 38px;
 	margin-left: 6px;
+	background: #8398db;
+	border-radius: 0;
+	color: #fff;
 }
+
 .btn-generate,.btn-record{
 	width: 106px;
 	height: 38px;
 	margin-top: 14px;
+	line-height: 24px;
+	border-radius: 0;
+	padding-left: 20px;
+	position: relative;
 }
 .btn-generate{
 	margin-right: 14px;
+	background: #51ab44;
 }
 .btn-record{
+	background: #296fcd;
 	margin-right: 7px;
 }
+.record-icon, .generate-icon, .upload-icon{
+	display: block;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	left: 6px;
+	top: 8px;
+	background: url(../img/icon.png) no-repeat;
+}
+.record-icon{
+	background-position: 0 -200px;
+}
+
+.generate-icon{
+	background-position: 0 -176px;
+}
+.upload-icon{
+	background-position: 0 -220px;
+}
 .work-flow{
-	height: 158px;
+	height: 268px;
 	background: url(../img/workflow.png) no-repeat;
 	background-position: 24px 24px;
 }
@@ -112,7 +143,7 @@
 	padding-left: 12px;
 }
 .analysis-title .btn{
-	float: right;
+	float: right!important;
 	margin-top: 9px;
 	height: 26px;
 	border: none;
@@ -138,13 +169,144 @@
 /*.analysis-content thead{
 	background: #
 }*/
-.analysis-content .table-striped > tbody > tr:nth-of-type(odd){
+/*.analysis-content .table-striped > tbody > tr:nth-of-type(odd){
 	background: #fff;
 }
 .analysis-content .table-striped > tbody > tr:nth-of-type(even){
-	background: #fdfdfd;
-}
+	background: #fff;
+}*/
 .analysisi-right,.analysisi-bug .panel-body{
 	height: 352px;
 	overflow-y: scroll;
+}
+.det-content .panel-heading{
+	padding: 0;
+}
+.det-content .panel,.det-content .panel-body{
+	border: 0!important;
+}
+.det-content .panel-body{
+	padding: 0;
+}
+.det-content .panel{
+	background: #faf9fa;
+}
+.panel-collapse{
+	background: #fff;
+}
+.panel-collapse .panel-body{
+	height: 268px;
+	overflow: scroll;
+}
+.det-content .table > thead > tr > th{
+	border: 0;
+}
+.det-content .table > tbody > tr > td{
+	border-top: 1px dashed #f3f6f8;
+}
+.det-content .btn{
+	float: none;
+}
+
+.d-auth-i{
+	height: 34px;
+	line-height: 34px;
+}
+
+.btn-unfold, .btn-fold{
+	position: relative;
+}
+.btn-unfold:after{
+	display: block;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    bottom: 10px;
+    right: 30px;
+    transform: translate(-50%,0);
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: none;
+    border-bottom: 4px dashed #296fcd;
+    border-bottom: 4px solid\9 #296fcd;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+
+}
+.collapsed:after{
+	display: block;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    bottom: 10px;
+    right: 30px;
+    transform: translate(-50%,0);
+    margin-left: 2px;
+    vertical-align: middle;
+    border-bottom: none;
+    border-top: 4px dashed #b5b5b5;
+    border-top: 4px solid\9 #b5b5b5;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.btn-refresh{
+	position: relative;
+}
+.fresh-icon{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0 -240px;
+	right: 30px;
+	top: 3px;
+}
+.analysis-wrap:nth-of-type(2) .analysis-title{
+	border-left: 6px solid #ea525a;
+}
+.analysis-wrap:nth-of-type(3) .analysis-title{
+	border-left: 6px solid #8398db;
+}
+.analysis-wrap:nth-of-type(4) .analysis-title{
+	border-left: 6px solid #3987f1;
+}
+.analysis-wrap:nth-of-type(5) .analysis-title{
+	border-left: 6px solid #80c269;
+}
+.btn-unfold{
+	border-right: 1px solid #c2c3c5!important;
+	border-radius: 0;
+}
+#file-input{
+	position: absolute;
+	top: 14px;
+    left: 92px;
+    opacity: 0;
+}
+#collapseThree li.active a{
+	border-bottom: 3px solid #296fcd;
+	color: #296fcd;
+}
+#collapseThree li.active a:after{
+	display: block;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    bottom: -6px;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed #296fcd;
+    border-top: 4px solid\9 #296fcd;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+#collapseThree .nav-pills > li.active > a,#collapseThree .nav-pills > li.active > a:hover{
+	background: #fff;
 }

@@ -6,10 +6,11 @@ $(function () {
             plotShadow: false
         },
         title: {
-            text: 'Browser<br>shares<br>2015',
+            text: '9.0',
             align: 'center',
             verticalAlign: 'middle',
-            y: 40
+            fontSize: '20'
+            // y: 20
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -17,35 +18,36 @@ $(function () {
         plotOptions: {
             pie: {
                 dataLabels: {
-                    enabled: true,
+                    enabled: false,
                     distance: -50,
                     style: {
-                        fontWeight: 'bold',
+                        // fontWeight: 'normal',
                         color: 'white'
                     }
                 },
-                startAngle: -90,
-                endAngle: 150,
-                center: ['50%', '75%']
+                startAngle: 0,
+                endAngle: 360,
+                center: ['50%', '50%']
             }
+        },
+        credits: {
+            enabled: false
         },
         series: [{
             type: 'pie',
-            name: 'Browser share',
-            innerSize: '50%',
+            name: 'score',
+            innerSize: '90%',
             data: [
-                ['Firefox',   10.38],
-                ['IE',       56.33],
-                ['Chrome', 24.03],
-                ['Safari',    4.77],
-                ['Opera',     0.91],
-                {
-                    name: 'Proprietary or Undetectable',
-                    y: 0.2,
-                    dataLabels: {
-                        enabled: false
-                    }
-                }
+                {name: 'Score',  y: 9, color: '#80c269'},
+               
+                {name: 'else',  y: 1, color: '#e5e5e5'}
+                // {
+                //     name: 'Proprietary or Undetectable',
+                //     y: 0.2,
+                //     dataLabels: {
+                //         enabled: false
+                //     }
+                // }
             ]
         }]
     });

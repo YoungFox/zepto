@@ -30,6 +30,7 @@
 	float: left;
 }
 .ban-btn{
+	position: relative;
 	display: block;
 	width: 100%;
 	height: 64px;
@@ -85,7 +86,7 @@
 .panel-form{
 	float: right;
 	height: 100%;
-	width: 814px;
+	width: 814px!important;
 	padding-top: 12px;
 }
 .panel-form .form-control{
@@ -97,10 +98,11 @@
 .btn-search{
 	width: 92px;
 	height: 38px;
-	background: #8398db;
 	color: #fff;
 	border: 1px solid #99a9c3;
-	/*border-radius: 0;*/
+	padding-left: 20px;
+	background: #8398db url(../img/icon.png) no-repeat;
+	background-position: 10px -266px;
 }
 .pagination{
 	float: right;
@@ -127,7 +129,8 @@
 .table > tbody > tr > td{
 	height: 60px;
 	padding: 9px 8px;
-	line-height: 42px;
+	/*line-height: 42px;*/
+	overflow: hidden;
 }
 .app-img{
 	height: 42px;
@@ -155,4 +158,72 @@
 }
 .table-striped > tbody > tr:nth-of-type(even) {
   background-color: #f9f9f9;
+}
+.home-panel .nav-tabs{
+	height: 60px;
+}
+.home-panel .nav-tabs a{
+	height: 60px;
+	line-height: 38px;
+	margin: 0;
+}
+.home-panel .nav-tabs > li.active > a,.home-panel  .nav-tabs > li.active > a:hover,.home-panel .nav-tabs > li.active > a:focus{
+	background: #296fcd;
+	color: #fff;
+	margin: 0;
+	border: 0;
+}
+.nav-tabs{
+	float: left;
+}
+.panel-form .form-group,.panel-form .form-control{
+	display: inline-block!important;
+}
+.table > tbody > tr > td{
+	border: 0;
+	max-width: 200px;
+	vertical-align: middle;
+}
+.total-page{
+	height: 34px;
+	line-height: 34px;
+	color: #606060;
+	padding-left: 10px;
+}
+.ban-upload{
+	opacity: 0;
+	position: absolute;
+	width: 230px!important;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	cursor: pointer;
+}
+.up-txt{
+	position: absolute;
+	height: 100%;
+	width: 166px;
+	top: 0;
+	right: 0;
+	color: #fff;
+	line-height: 64px;
+	text-align: center;
+}
+
+.home-panel .nav-tabs .active a:after{
+	display: block;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed #296fcd;
+    border-top: 4px solid\9 #296fcd;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
 }

@@ -18,7 +18,7 @@ $(function() {
                 cursor: 'pointer',
                 dataLabels: {
                     enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    format: '<b>{point.name}</b>',
                     style: {
                         color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                     }
@@ -32,7 +32,7 @@ $(function() {
             name: 'Brands',
             colorByPoint: true,
             data: [{
-                name: 'Microsoft Internet Explorer',
+                name: 'IE',
                 y: 56.33
             }, {
                 name: 'Chrome',
@@ -49,7 +49,7 @@ $(function() {
                 name: 'Opera',
                 y: 0.91
             }, {
-                name: 'Proprietary or Undetectable',
+                name: 'else',
                 y: 0.2
             }]
         }]
@@ -74,7 +74,7 @@ $(function() {
                 cursor: 'pointer',
                 dataLabels: {
                     enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    format: '<b>{point.name}</b>',
                     style: {
                         color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                     }
@@ -88,7 +88,7 @@ $(function() {
             name: 'Brands',
             colorByPoint: true,
             data: [{
-                name: 'Microsoft Internet Explorer',
+                name: 'IE',
                 y: 56.33
             }, {
                 name: 'Chrome',
@@ -105,7 +105,7 @@ $(function() {
                 name: 'Opera',
                 y: 0.91
             }, {
-                name: 'Proprietary or Undetectable',
+                name: 'else',
                 y: 0.2
             }]
         }]
@@ -130,7 +130,7 @@ $(function() {
                 cursor: 'pointer',
                 dataLabels: {
                     enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    format: '<b>{point.name}</b>',
                     style: {
                         color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                     }
@@ -144,7 +144,7 @@ $(function() {
             name: 'Brands',
             colorByPoint: true,
             data: [{
-                name: 'Microsoft Internet Explorer',
+                name: 'IE',
                 y: 56.33
             }, {
                 name: 'Chrome',
@@ -161,7 +161,7 @@ $(function() {
                 name: 'Opera',
                 y: 0.91
             }, {
-                name: 'Proprietary or Undetectable',
+                name: 'else',
                 y: 0.2
             }]
         }]
@@ -172,10 +172,10 @@ $(function() {
 			type: 'column'
 		},
 		title: {
-			text: 'World\'s largest cities per 2014'
+			text: '热门库Top10'
 		},
 		subtitle: {
-			text: 'Source: <a href="http://en.wikipedia.org/wiki/List_of_cities_proper_by_population">Wikipedia</a>'
+			text: ''
 		},
 		xAxis: {
 			type: 'category',
@@ -190,7 +190,7 @@ $(function() {
 		yAxis: {
 			min: 0,
 			title: {
-				text: 'Population (millions)'
+				text: '占有率'
 			}
 		},
 		legend: {
@@ -236,10 +236,10 @@ $(function() {
 			type: 'column'
 		},
 		title: {
-			text: 'World\'s largest cities per 2014'
+			text: '热门库Top10'
 		},
 		subtitle: {
-			text: 'Source: <a href="http://en.wikipedia.org/wiki/List_of_cities_proper_by_population">Wikipedia</a>'
+			text: ''
 		},
 		xAxis: {
 			type: 'category',
@@ -254,7 +254,7 @@ $(function() {
 		yAxis: {
 			min: 0,
 			title: {
-				text: 'Population (millions)'
+				text: '占有率'
 			}
 		},
 		legend: {
@@ -301,10 +301,10 @@ $(function() {
 			type: 'column'
 		},
 		title: {
-			text: 'World\'s largest cities per 2014'
+			text: '热门库Top10'
 		},
 		subtitle: {
-			text: 'Source: <a href="http://en.wikipedia.org/wiki/List_of_cities_proper_by_population">Wikipedia</a>'
+			text: ''
 		},
 		xAxis: {
 			type: 'category',
@@ -319,7 +319,7 @@ $(function() {
 		yAxis: {
 			min: 0,
 			title: {
-				text: 'Population (millions)'
+				text: '占有率'
 			}
 		},
 		legend: {

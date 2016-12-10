@@ -5,7 +5,7 @@
 	<title>分析详情</title>
 	<link rel="stylesheet" href="../resources/css/lib/bootstrap.css">
 	<link rel="stylesheet" href="../resources/css/common.css">
-	<link rel="stylesheet" href="../resources/css/record.css">
+	<link rel="stylesheet" href="../resources/css/record-info.css">
 </head>
 <body>
 <!-- 此处header是公用模块，前端没办法提成公用，可以用后台语言提取公用部分 -->
@@ -18,8 +18,8 @@
 </header>
 <ol class="breadcrumb">
 	<li><a href="./home.html">主页</a></li>
-	<li class="active">软件漏洞分析</li>
-	<li class="active">安卓应用分析</li>
+	<li><a href="./analysis.html"><a href="./home.html">软件漏洞分析</a></li>
+	<li><a href="./home.html">安卓应用分析</a></li>
 	<li class="active">分析详情</li>
 </ol>
 <section class="bd">
@@ -36,48 +36,38 @@
 				<div id="container"></div>
 			</div>
 		</div>
+		<div class="panel panel-default d-auth-l">
+			<div class="panel-heading">
+				应用权限列表
+			</div>
+			<div class="panel-body">
+				<ul class="d-auth-list">
+					<li class="d-auth-i">读取短信内容</li>
+					<li class="d-auth-i">读取短信内容</li>
+					<li class="d-auth-i">读取短信内容</li>
+					<li class="d-auth-i">读取短信内容</li>
+					<li class="d-auth-i">读取短信内容</li>
+					<li class="d-auth-i">读取短信内容</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<div class="detail">
 		<div>
 
 		<!-- Nav tabs -->
 		<ul class="nav nav-tabs" role="tablist">
-			<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-			<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-			<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-			<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+			<li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">*不良内容</a></li>
+			<li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">*数据存储安全</a></li>
+			<li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">*数据运行安全</a></li>
+			<li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">*数据传输安全</a></li>
+			<li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">*敏感行为</a></li>
+			<li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">*漏洞扫描</a></li>
 		</ul>
 
 		<!-- Tab panes -->
 		<div class="tab-content">
-		<div role="tabpanel" class="tab-pane active" id="home">
-			<div class="pro-list">
-				<table class="table table-striped bd-table">
-				  	<thead> 
-				  		<tr>
-				  			<th>序号</th> 
-				  			<th>问题概要</th> 
-				  			<th>问题描述</th> 
-				  			<th>证据截图</th> 
-				  			<th>危害等级</th> 
-				  		</tr> 
-				  	</thead> 
-				  	<tbody> 
-				  		<tr> 
-				  			<td scope="row">1</td> 
-				  			<td>淫秽色情</td> 
-				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
-				  			<td><img src="" alt=""></td> 
-				  			<td>
-				  				<button type="submit" class="btn btn-danger">高危</button>
-				  			</td> 
-				  		</tr> 
-				  		
-				  	</tbody>
-				</table>
-				<button type="submit" class="btn btn-bottom btn-success">高危</button>
-				<button type="submit" class="btn btn-bottom btn-primary">高危</button>
-			</div>
+		<div role="tabpanel" class="tab-pane active" id="tab1">
 			<form class="form-horizontal content-form">
 			  <div class="form-group">
 			    <label for="inputEmail3" class="col-sm-2 control-label">问题概要</label>
@@ -109,17 +99,17 @@
 					</select>
 				</div>
 			  </div>
-			  <div class="form-group">
-			    <div class="col-sm-offset-2 col-sm-10">
-			      <button type="submit" class="btn btn-success">提交</button>
-			      <button type="submit" class="btn btn-primray">重置</button>
+			  <div class="form-group btn-group">
+			    <div class="col-sm-10 col-sm-offset-2">
+			      <button type="submit" class="btn btn-success btn-bottom">√&nbsp;&nbsp;提交</button>
+			      <a href="./record.html" class="btn btn-info btn-bottom back-btn">返回</a>
 			    </div>
 			  </div>
 			</form>
 		</div>
-		<div role="tabpanel" class="tab-pane" id="profile">...</div>
-		<div role="tabpanel" class="tab-pane" id="messages">...</div>
-		<div role="tabpanel" class="tab-pane" id="settings">...</div>
+		<div role="tabpanel" class="tab-pane" id="tab2">...</div>
+		<div role="tabpanel" class="tab-pane" id="tab3">...</div>
+		<div role="tabpanel" class="tab-pane" id="tab4">...</div>
 		</div>
 
 		</div>
@@ -134,3 +124,4 @@
 <script src="../resources/js/record.js"></script>
 </body>
 </html>
+

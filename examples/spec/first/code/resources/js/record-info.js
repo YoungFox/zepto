@@ -29,6 +29,9 @@ $(function () {
                 center: ['50%', '75%']
             }
         },
+        credits: {
+            enabled: false
+        },
         series: [{
             type: 'pie',
             name: 'Browser share',
