@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>应用分析</title>
+	<title>高级用户分析</title>
 	<link rel="stylesheet" href="../resources/css/lib/bootstrap.css">
 	<link rel="stylesheet" href="../resources/css/common.css">
 	<link rel="stylesheet" href="../resources/css/advanced.css">
@@ -21,20 +21,6 @@
 	<li><a href="./analysis.html">应用安全分析</a></li>
 	<li class="active">分析详情</li>
 </ol>
-<!-- <div>
-	<ul class="nav nav-tabs nav-head" role="tablist">
-	<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-	<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-	<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-	<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-	</ul>
-
-	<div class="tab-content">
-	<div role="tabpanel" class="tab-pane active" id="home">1</div>
-	<div role="tabpanel" class="tab-pane" id="profile">2</div>
-	<div role="tabpanel" class="tab-pane" id="messages">3</div>
-	<div role="tabpanel" class="tab-pane" id="settings">4</div>
-</div> -->
 
 </div>
 <section class="bd">
@@ -48,7 +34,9 @@
 			<div class="app-bri-item app-s-wrap">应用大小<span class="app-txt size-txt">12.22MB</span></div>
 			<div class="app-bri-item app-r-wrap">安全指纹结果</div>
 			<div class="app-chart-wrap">
-				<div id="container"></div>
+				<div class="s-container">
+					<img class="s-con-img" src="../resources/img/bs7.png" alt="">
+				</div>
 			</div>
 		</div>
 		<div class="panel panel-default d-auth-l">
@@ -143,7 +131,8 @@
 									  			<td scope="row">1</td> 
 									  			<td>淫秽色情</td> 
 									  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
-									  			<td><img src="" alt=""></td> 
+									  			<!-- data-whatever是大图预览的图片地址 -->
+									  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
 									  			<td>
 									  				<button type="submit" class="btn btn-danger">高危</button>
 									  			</td> 
@@ -172,7 +161,23 @@
 	</div>
 </section>
 <footer class="ft">
-	
+
+<div class="modal fade" id="expandModal" tabindex="-1" role="dialog" aria-labelledby="expandModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="expandModalLabel">大图预览</h4>
+      </div>
+      <div class="modal-body">
+        	<img class="expand-img" src="" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
 </footer>
 <script src="../resources/js/lib/jquery.js"></script>
 <script src="../resources/js/lib/bootstrap.min.js"></script>

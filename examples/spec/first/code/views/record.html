@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>分析详情</title>
+	<title>录入</title>
 	<link rel="stylesheet" href="../resources/css/lib/bootstrap.css">
 	<link rel="stylesheet" href="../resources/css/common.css">
 	<link rel="stylesheet" href="../resources/css/record.css">
@@ -33,7 +33,9 @@
 			<div class="app-bri-item app-s-wrap">应用大小<span class="app-txt size-txt">12.22MB</span></div>
 			<div class="app-bri-item app-r-wrap">安全指纹结果</div>
 			<div class="app-chart-wrap">
-				<div id="container"></div>
+				<div class="s-container">
+					<img class="s-con-img" src="../resources/img/bs7.png" alt="">
+				</div>
 			</div>
 		</div>
 		<div class="panel panel-default d-auth-l">
@@ -92,6 +94,15 @@
 				  		
 				  	</tbody>
 				</table>
+				<select name="" id="" class="s-d-l">
+					<option value="选择危害等级">选择危害等级</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<a type="submit" class="btn btn-bottom btn-primary btn-score"><i></i>综合评分</a>
+
 				<button type="submit" class="btn btn-bottom btn-success">√&nbsp;&nbsp;分析完毕</button>
 				<a type="submit" href="./record-info.html" class="btn btn-bottom btn-primary">+&nbsp;&nbsp;添加信息</a>
 			</div>

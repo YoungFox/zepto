@@ -56,6 +56,9 @@
 	font-size: 16px;
 	width: 166px;
 }
+.up-txt{
+	font-size: 16px;
+}
 .btn-wrap:nth-of-type(2) .ban-btn{
 	background: #88c2e9;
 }

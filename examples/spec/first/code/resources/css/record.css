@@ -60,14 +60,6 @@
 	padding-left: 6px;
 	color: #000;
 }
-.app-chart-wrap{
-	
-}
-#container{
-	height: 180px;
-	width: 180px;
-}
-
 .detail .tab-content{
 	margin: 10px;
 }
@@ -99,3 +91,26 @@
 	line-height: 24px;
 }
 
+.btn-score{
+	float: left!important;
+}
+.s-d-l{
+	width: 166px;
+	height: 38px;
+	float: left;
+	margin-right: 10px;
+}
+.btn-score{
+	position: relative;
+	padding-left: 20px;
+}
+.btn-score i{
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 9px;
+	left: 30px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0 -355px;
+}
