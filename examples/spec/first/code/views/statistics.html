@@ -12,8 +12,13 @@
 <header class="hd g-clearfix">
 	<a class="logo" href="./home.html"></a>
 	<a class="nav-btn log-out"><div class="btn-i">注销</div></a>
-	<a class="nav-btn user"><div class="btn-i"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div></a>
-	<a class="nav-btn statistics" href="#"><div class="btn-i">统计分析</div></a>
+	<div class="dropdown nav-btn user">
+		<div class="btn-i" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div>
+	  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	    <li><a href="./change.html">修改密码</a></li>
+	  </ul>
+	</div>
+	<a class="nav-btn statistics" href="./statistics.html"><div class="btn-i">统计分析</div></a>
 	<a class="nav-btn analysis" href="./analysis.html"><div class="btn-i">应用分析</div></a>
 </header>
 <ol class="breadcrumb">
@@ -69,6 +74,7 @@
 				</div>
 				<div class="panel-body">
 					<div id="container1" class="container"></div>
+					<div id="container" class="container"></div>
 				</div>
 			</div>
 			<div class="panel panel-default">
@@ -134,7 +140,6 @@
 	</div>
 </section>
 <footer class="ft">
-	
 </footer>
 <script src="../resources/js/lib/jquery.js"></script>
 <script src="../resources/js/lib/bootstrap.min.js"></script>

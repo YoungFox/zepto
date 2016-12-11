@@ -12,9 +12,14 @@
 <header class="hd g-clearfix">
 	<a class="logo" href="./home.html"></a>
 	<a class="nav-btn log-out"><div class="btn-i">注销</div></a>
-	<a class="nav-btn user"><div class="btn-i"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div></a>
+	<div class="dropdown nav-btn user">
+		<div class="btn-i" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div>
+	  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	    <li><a href="./change.html">修改密码</a></li>
+	  </ul>
+	</div>
 	<a class="nav-btn statistics" href="./statistics.html"><div class="btn-i">统计分析</div></a>
-	<a class="nav-btn analysis" href="#"><div class="btn-i">应用分析</div></a>
+	<a class="nav-btn analysis" href="./analysis.html"><div class="btn-i">应用分析</div></a>
 </header>
 <ol class="breadcrumb">
 	<li><a href="./home.html">主页</a></li>
@@ -38,7 +43,7 @@
 		</div>
 		<div class="panel panel-default d-auth-l">
 			<div class="panel-heading">
-				危险权限列表
+				应用权限列表
 			</div>
 			<div class="panel-body">
 				<ul class="d-auth-list">
@@ -68,14 +73,13 @@
 		<section class="det-content">
 			<div class="work-flow"></div>
 			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-			  <div class="panel panel-default analysis-wrap analysisi-right-wrap">
+			 <!--  <div class="panel panel-default analysis-wrap analysisi-right-wrap">
 			    <div class="panel-heading" role="tab" id="headingOne">
 			      <h4 class="panel-title">
 			        
 				        <p class="analysis-title g-clearfix">
 						应用权限
-						<!-- <a class="btn btn-default btn-refresh">刷新<i class="fresh-icon"></i></a> -->
-						<a role="button" class="btn btn-default btn-unfold" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">展开查看</a>
+						<a role="button" class="btn btn-default btn-unfold collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">展开查看</a>
 						</p>
 			      </h4>
 			    </div>
@@ -144,7 +148,7 @@
 					</table>
 			      </div>
 			    </div>
-			  </div>
+			  </div> -->
 			  
 
 			<div class="panel panel-default analysis-wrap analysisi-right-wrap">
@@ -158,9 +162,19 @@
 						</p>
 			      </h4>
 			    </div>
-			    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
 			      <div class="panel-body">
-			    	<table class="table table-striped bd-table">
+
+					  <!-- Nav tabs -->
+					  <ul class="nav nav-tabs" role="tablist">
+					    <li role="presentation" class="presentation0 active"><a href="#home-second" aria-controls="home-second" role="tab" data-toggle="tab">*功能库漏洞</a></li>
+					    <li role="presentation" class="presentation0"><a href="#profile-second" aria-controls="profile-second" role="tab" data-toggle="tab">*非功能库漏洞</a></li>
+					  </ul>
+
+					  <!-- Tab panes -->
+					  <div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active" id="home-second">
+					    	<table class="table table-striped bd-table">
 						  	<thead> 
 						  		<tr>
 						  			<th>库名称</th> 
@@ -201,6 +215,12 @@
 						  		</tr> 
 						  	</tbody>
 						</table>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="profile-second">...</div>
+					    
+					  </div>
+
+			    	
 			      </div>
 			    </div>
 			  </div>
@@ -213,7 +233,7 @@
 				        <p class="analysis-title g-clearfix">
 						敏感行为
 						<a class="btn btn-default btn-refresh">刷新<i class="fresh-icon"></i></a>
-						<a role="button" class="btn btn-default btn-unfold" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">展开查看</a>
+						<a role="button" class="btn btn-default btn-unfold collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">展开查看</a>
 						</p>
 			      </h4>
 			    </div>
@@ -222,12 +242,21 @@
 			       
 					<div class="panel panel-default">
 					<div class="panel-heading">
-						<ul class="nav nav-pills">
-							<li role="presentation" class="active"><a href="#">*日志信息</a></li>
-							<li role="presentation"><a href="#">*敏感路径</a></li>
-						</ul>
+					 <!-- Nav tabs -->
+					  <ul class="nav nav-tabs" role="tablist">
+					    <li role="presentation" class="presentation0 active"><a href="#home-third" aria-controls="home-third" role="tab" data-toggle="tab">*日志信息</a></li>
+					    <li role="presentation" class="presentation0"><a href="#profile-third" aria-controls="profile-third" role="tab" data-toggle="tab">*敏感路径</a></li>
+					  </ul>
+
+						<!-- <ul class="nav nav-pills">
+							<li role="presentation" class="presentation0 active"><a href="#">*日志信息</a></li>
+							<li role="presentation" class="presentation0"><a href="#">*敏感路径</a></li>
+						</ul> -->
 					</div>
 					<div class="panel-body">
+						<!-- Tab panes -->
+					  <div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active" id="home-third">
 						<table class="table table-striped bd-table">
 						  	<thead> 
 						  		<tr>
@@ -258,8 +287,13 @@
 						  		</tr> 
 						  	</tbody>
 						</table>
+						</div>
+						 <div role="tabpanel" class="tab-pane" id="profile-third">
+						 	<img class="path-img" src="../resources/img/d-a.jpg" alt="">
+						 </div>
+						</div>
 					</div>
-				</div>
+					</div>
 			      </div>
 			    </div>
 			  </div>
@@ -267,11 +301,10 @@
 			<div class="panel panel-default analysis-wrap analysisi-right-wrap">
 			    <div class="panel-heading" role="tab" id="headingFour">
 			      <h4 class="panel-title">
-			        
 				        <p class="analysis-title g-clearfix">
-						漏洞信息
+						泄露信息
 						<a class="btn btn-default btn-refresh">刷新<i class="fresh-icon"></i></a>
-						<a role="button" class="btn btn-default btn-unfold" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">展开查看</a>
+						<a role="button" class="btn btn-default btn-unfold collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">展开查看</a>
 						</p>
 			      </h4>
 			    </div>
@@ -280,62 +313,62 @@
 			        <table class="table bd-table">
 					  	<thead> 
 					  		<tr>
-					  			<th>权限名称</th> 
-					  			<th>危险程度</th> 
-					  			<th>权限描述</th> 
+					  			<th>危险操作详情</th> 
+					  			<th>危险操作名称</th> 
+					  			<th>触发类型</th> 
+					  			<th>发送地址</th> 
+					  			<th>证据</th> 
+					  			<th>泄露路径</th> 
+					  			<th>泄露触发类型</th> 
 					  		</tr> 
 					  	</thead> 
 					  	<tbody> 
 					  		<tr> 
 					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
+					  			<td>国际移动装备辨识码</td> 
+					  			<td>xxxxx</td> 
+					  			<td>xxxx</td> 
+					  			<td>网路外发</td> 
+					  			<td>http://xxxx</td> 
+					  			<td>xx类型</td> 
 					  		</tr> 
 					  		<tr> 
 					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
+					  			<td>国际移动装备辨识码</td> 
+					  			<td>xxxxx</td> 
+					  			<td>xxxx</td> 
+					  			<td>网路外发</td> 
+					  			<td>http://xxxx</td> 
+					  			<td>xx类型</td> 
 					  		</tr> 
 					  		<tr> 
 					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
+					  			<td>国际移动装备辨识码</td> 
+					  			<td>xxxxx</td> 
+					  			<td>xxxx</td> 
+					  			<td>网路外发</td> 
+					  			<td>http://xxxx</td> 
+					  			<td>xx类型</td> 
 					  		</tr> 
 					  		<tr> 
 					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
+					  			<td>国际移动装备辨识码</td> 
+					  			<td>xxxxx</td> 
+					  			<td>xxxx</td> 
+					  			<td>网路外发</td> 
+					  			<td>http://xxxx</td> 
+					  			<td>xx类型</td> 
 					  		</tr> 
 					  		<tr> 
 					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
+					  			<td>国际移动装备辨识码</td> 
+					  			<td>xxxxx</td> 
+					  			<td>xxxx</td> 
+					  			<td>网路外发</td> 
+					  			<td>http://xxxx</td> 
+					  			<td>xx类型</td> 
 					  		</tr> 
-					  		<tr> 
-					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
-					  		</tr> 
-					  		<tr> 
-					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
-					  		</tr> 
-					  		<tr> 
-					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
-					  		</tr> 
-					  		<tr> 
-					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
-					  		</tr> 
-					  		<tr> 
-					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
-					  		</tr> 
+					  		
 					  	</tbody>
 					</table>
 			      </div>
@@ -350,73 +383,13 @@
 				        <p class="analysis-title g-clearfix">
 						大数据分析
 						<a class="btn btn-default btn-refresh">刷新<i class="fresh-icon"></i></a>
-						<a role="button" class="btn btn-default btn-unfold" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">展开查看</a>
+						<a role="button" class="btn btn-default btn-unfold collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">展开查看</a>
 						</p>
 			      </h4>
 			    </div>
 			    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
 			      <div class="panel-body">
-			        <table class="table bd-table">
-					  	<thead> 
-					  		<tr>
-					  			<th>权限名称</th> 
-					  			<th>危险程度</th> 
-					  			<th>权限描述</th> 
-					  		</tr> 
-					  	</thead> 
-					  	<tbody> 
-					  		<tr> 
-					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
-					  		</tr> 
-					  		<tr> 
-					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
-					  		</tr> 
-					  		<tr> 
-					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
-					  		</tr> 
-					  		<tr> 
-					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
-					  		</tr> 
-					  		<tr> 
-					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
-					  		</tr> 
-					  		<tr> 
-					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
-					  		</tr> 
-					  		<tr> 
-					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
-					  		</tr> 
-					  		<tr> 
-					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
-					  		</tr> 
-					  		<tr> 
-					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
-					  		</tr> 
-					  		<tr> 
-					  			<td scope="row">android.permission.READ_SMS</td> 
-					  			<td><button type="button" class="btn btn-danger">危险</button></td> 
-					  			<td>读取短信内容</td> 
-					  		</tr> 
-					  	</tbody>
-					</table>
+			       	<img class="d-a-img" src="../resources/img/d-a.jpg" alt=""> 
 			      </div>
 			    </div>
 			  </div>

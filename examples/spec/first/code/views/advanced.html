@@ -12,9 +12,14 @@
 <header class="hd g-clearfix">
 	<a class="logo" href="./home.html"></a>
 	<a class="nav-btn log-out"><div class="btn-i">注销</div></a>
-	<a class="nav-btn user"><div class="btn-i"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div></a>
+	<div class="dropdown nav-btn user">
+		<div class="btn-i" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div>
+	  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	    <li><a href="./change.html">修改密码</a></li>
+	  </ul>
+	</div>
 	<a class="nav-btn statistics" href="./statistics.html"><div class="btn-i">统计分析</div></a>
-	<a class="nav-btn analysis" href="#"><div class="btn-i">应用分析</div></a>
+	<a class="nav-btn analysis" href="./analysis.html"><div class="btn-i">应用分析</div></a>
 </header>
 <ol class="breadcrumb">
 	<li><a href="./home.html">主页</a></li>
@@ -41,7 +46,7 @@
 		</div>
 		<div class="panel panel-default d-auth-l">
 			<div class="panel-heading">
-				应用权限列表
+				危险权限列表
 			</div>
 			<div class="panel-body">
 				<ul class="d-auth-list">
@@ -61,16 +66,16 @@
 				<h5>共检测出<span>7<span>个漏洞</h5>
 				<ul class="h-img-list g-clearfix">
 					<li class="img-item">高危漏洞<span>4</span></li>
-					<li class="img-item">高危漏洞<span>4</span></li>
-					<li class="img-item">高危漏洞<span>4</span></li>
+					<li class="img-item">高危漏洞<span>2</span></li>
+					<li class="img-item">高危漏洞<span>1</span></li>
 				</ul>
 			</div>
 			<div class="problem-i-wrap h-wrap">
 				<h5>总共检测出恶意行为<span>7<span>个</h5>
 				<ul class="h-img-list g-clearfix">
 					<li class="img-item">高危问题<span>4</span></li>
-					<li class="img-item">高危问题<span>4</span></li>
-					<li class="img-item">高危问题<span>4</span></li>
+					<li class="img-item">高危问题<span>2</span></li>
+					<li class="img-item">高危问题<span>1</span></li>
 				</ul>
 			</div>
 		</section>
@@ -91,12 +96,24 @@
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active tab-pane-wrap" id="tab1">
 						<section class="tab-pane-s pro-pie-wrap">
+								<ul class="img-tips">
+									<li class="tips-item">
+										<i class="color-cubic"></i>高危问题
+									</li>
+									<li class="tips-item">
+										<i class="color-cubic"></i>中危问题
+									</li>
+									<li class="tips-item">
+										<i class="color-cubic"></i>低危问题
+									</li>
+								</ul>
 								<div class="panel panel-default b-c-panel">
 									<div class="panel-heading">
 										<i class="icon icon-save"></i>
 										<i class="icon icon-refresh"></i>
 										<i class="icon icon-catalog"></i>
 									</div>
+								
 									<div class="panel-body">
 										<div id="container1" class="container"></div>
 									</div>
@@ -137,6 +154,37 @@
 									  				<button type="submit" class="btn btn-danger">高危</button>
 									  			</td> 
 									  		</tr> 
+									  		<tr> 
+									  			<td scope="row">1</td> 
+									  			<td>淫秽色情</td> 
+									  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+									  			<!-- data-whatever是大图预览的图片地址 -->
+									  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+									  			<td>
+									  				<button type="submit" class="btn btn-danger">高危</button>
+									  			</td> 
+									  		</tr> 
+									  		<tr> 
+									  			<td scope="row">1</td> 
+									  			<td>淫秽色情</td> 
+									  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+									  			<!-- data-whatever是大图预览的图片地址 -->
+									  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+									  			<td>
+									  				<button type="submit" class="btn btn-danger">高危</button>
+									  			</td> 
+									  		</tr> 
+									  		<tr> 
+									  			<td scope="row">1</td> 
+									  			<td>淫秽色情</td> 
+									  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+									  			<!-- data-whatever是大图预览的图片地址 -->
+									  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+									  			<td>
+									  				<button type="submit" class="btn btn-danger">高危</button>
+									  			</td> 
+									  		</tr> 
+									  		
 									  		
 									  	</tbody>
 									</table>

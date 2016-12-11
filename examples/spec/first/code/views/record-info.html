@@ -12,15 +12,20 @@
 <header class="hd g-clearfix">
 	<a class="logo" href="./home.html"></a>
 	<a class="nav-btn log-out"><div class="btn-i">注销</div></a>
-	<a class="nav-btn user"><div class="btn-i"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div></a>
+	<div class="dropdown nav-btn user">
+		<div class="btn-i" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div>
+	  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	    <li><a href="./change.html">修改密码</a></li>
+	  </ul>
+	</div>
 	<a class="nav-btn statistics" href="./statistics.html"><div class="btn-i">统计分析</div></a>
 	<a class="nav-btn analysis" href="./analysis.html"><div class="btn-i">应用分析</div></a>
 </header>
 <ol class="breadcrumb">
 	<li><a href="./home.html">主页</a></li>
-	<li><a href="./analysis.html"><a href="./home.html">软件漏洞分析</a></li>
-	<li><a href="./home.html">安卓应用分析</a></li>
-	<li class="active">分析详情</li>
+	<li><a href="./analysis.html">应用分析</a></li>
+	<li><a href="./record.html">手工录入</a></li>
+	<li class="active">添加详情</li>
 </ol>
 <section class="bd">
 	<div class="brief">
@@ -40,7 +45,7 @@
 		</div>
 		<div class="panel panel-default d-auth-l">
 			<div class="panel-heading">
-				应用权限列表
+				危险权限列表
 			</div>
 			<div class="panel-body">
 				<ul class="d-auth-list">
@@ -90,9 +95,10 @@
 			    </div>
 			  </div>
 			  <div class="form-group">
-			  	<label for="inputLevel" class="col-sm-2 control-label">危害等级</label>
+			  	<label for="inputLevel" class="col-sm-2 control-label inputLevel-label">危害等级</label>
 			  	<div class="col-sm-10">
 				  	<select class="form-control" id="inputLevel">
+				  		<option>请选择危害等级</option>
 					  <option>1</option>
 					  <option>2</option>
 					  <option>3</option>

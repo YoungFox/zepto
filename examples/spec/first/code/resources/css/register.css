@@ -5,7 +5,7 @@
 .s-code-wrap .form-control{
 	vertical-align: middle;
 	display: inline-block;
-	width: 190px;
+	width: 188px;
 }
 .s-code-wrap .col-sm-9{
 	/*margin: 0 15px;
@@ -17,7 +17,9 @@
 
 .btn-text{
 	background: #fff;
+	border: 1px solid #ccc!important;
 }
+
 .get-code-btn{
 	background: #3981e1;
 }
@@ -26,4 +28,11 @@
 }
 .img-code-wrap .form-control-w{
 	padding-right: 0!important;
+}
+.form-control{
+	/*border: 1px solid #e5e5e5!important;*/
+}
+.btn-text .form-control{
+	border: 0!important;
+	box-sizing: border-box;
 }

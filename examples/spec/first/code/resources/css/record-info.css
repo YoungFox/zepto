@@ -109,3 +109,11 @@
 	border-radius: 0!important;
 	box-shadow: none;
 }
+#inputLevel{
+	width: 170px;
+	border-radius: 0!important;
+	height: 50px;
+}
+.inputLevel-label{
+	padding-top: 15px!important;
+}

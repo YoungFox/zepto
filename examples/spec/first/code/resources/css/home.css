@@ -13,7 +13,7 @@
 	margin: 12px 24px;
 	box-shadow: 0px 0px 15px #dbe3e9;
 	background: #fff;
-
+	overflow: hidden;
 }
 .bd-table,.bd-table th{
 	text-align: center;
@@ -113,7 +113,13 @@
 }
 .pagination > li > a{
 	margin: 0 5px;
+	background: #cacaca;
+	border: 0;
+	color: #296fcd;
 }
+/*.pagination > li > a:focus, .pagination > li > span:focus{
+	background: #cacaca;
+}*/
 .pagination > li{
 	/*padding: 0 5px;*/
 }
@@ -229,4 +235,87 @@
     border-top: 4px solid\9 #296fcd;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
+}
+.pre-wrap a,.first-wrap a,.next-wrap a,.last-wrap a{
+	background: none!important;
+	margin: 0!important;
+	padding: 6px 10px!important;
+}
+.last-wrap a{
+	padding-right: 30px!important;
+}
+.last-wrap a:after{
+	content: '';
+    position: absolute;
+    right: 20px;
+    top: 11px;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-left: 5px;
+    border-top: 1px solid #296fcd;
+    border-right: 1px solid #296fcd;
+    border-top-right-radius: 2px;
+    -webkit-transform: translateY(30%) rotate(45deg);
+    transform: translateY(30%) rotate(45deg);
+}
+.last-wrap.cannot-c a:after{
+	content: '';
+    position: absolute;
+    right: 20px;
+    top: 11px;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-left: 5px;
+    border-top: 1px solid #606060;
+    border-right: 1px solid #606060;
+    border-top-right-radius: 2px;
+    -webkit-transform: translateY(30%) rotate(45deg);
+    transform: translateY(30%) rotate(45deg);
+}
+.first-wrap a:after{
+	content: '';
+    position: absolute;
+    left: -4px;
+    top: 11px;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-left: 5px;
+    border-top: 1px solid #296fcd;
+    border-right: 1px solid #296fcd;
+    border-top-right-radius: 2px;
+    -webkit-transform: translateY(30%) rotate(-135deg);
+    transform: translateY(30%) rotate(-135deg);
+}
+.first-wrap.cannot-c a:after{
+	content: '';
+    position: absolute;
+    left: -4px;
+    top: 11px;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-left: 5px;
+    border-top: 1px solid #606060;
+    border-right: 1px solid #606060;
+    border-top-right-radius: 2px;
+    -webkit-transform: translateY(30%) rotate(-135deg);
+    transform: translateY(30%) rotate(-135deg);
+}
+.cannot-c a {
+	color: #606060!important;
+}
+.cur-page a{
+	background: none!important;
+}
+.pan-tab0 a{
+	color: #000;
+	text-decoration: underline;
+}
+
+.pan-tab0.active a{
+	color: #fff;
+	text-decoration: none;
 }

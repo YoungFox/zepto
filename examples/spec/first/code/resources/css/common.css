@@ -39,6 +39,7 @@ a{
 	padding: 20px 0 12px;
 	height: 62px;
 	color: #fff;
+	cursor: pointer;
 }
 .nav-btn:hover{
 	color: #fafafa;
@@ -66,7 +67,15 @@ a{
 	padding: 0;
 	text-align: center;
 }
-
+.hd .dropdown-menu{
+	background: #354052!important;;
+}
+.hd .dropdown-menu a{
+	color: #fff!important;
+}
+.hd .dropdown-menu a:hover{
+	background:  #354052!important;
+}
 .user .btn-i{
 	padding-right: 50px;
 	position: relative;
@@ -187,7 +196,7 @@ a{
 	margin-top: 20px;
 }
 .form-wrap .form-control{
-	border: 0;
+	/*border: 0;*/
 	border-radius: 0;
 	height: 38px;
 }
@@ -242,4 +251,9 @@ a{
 	width: 86px;
 	height: 86px;
 	margin: 12px 53px 0;
+}
+.evidence-img{
+	height: 22px;
+	width: 22px;
+	margin-right: 4px;
 }

@@ -114,3 +114,8 @@
 	background: url(../img/icon.png) no-repeat;
 	background-position: 0 -355px;
 }
+.table-wrap{
+	height: 500px;
+	overflow: scroll;
+	margin-bottom: 30px;
+}

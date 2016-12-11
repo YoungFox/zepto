@@ -1,178 +1,203 @@
 $(function() {
 	Highcharts.chart('container1', {
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie'
-        },
-        title: {
-            text: '恶意行为'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
-            }
-        },
-        credits: {
+		chart: {
+			type: 'pie'
+		},
+		title: {
+			text: ''
+		},
+		tooltip: {
+			pointFormat: '{series.name}: <b>{point.y}</b><br>占比: <b>{point.percentage:.1f}%</b>'
+		},
+		plotOptions: {
+			pie: {
+				allowPointSelect: true,
+				cursor: 'pointer',
+				dataLabels: {
+					enabled: true,
+					format: '<b>{point.name}</b>',
+					style: {
+						color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+					}
+				}
+			}
+		},
+		credits: {
 			enabled: false
 		},
-        series: [{
-            name: 'Brands',
-            colorByPoint: true,
-            data: [{
-                name: 'IE',
-                y: 56.33
-            }, {
-                name: 'Chrome',
-                y: 24.03,
-                sliced: true,
-                selected: true
-            }, {
-                name: 'Firefox',
-                y: 10.38
-            }, {
-                name: 'Safari',
-                y: 4.77
-            }, {
-                name: 'Opera',
-                y: 0.91
-            }, {
-                name: 'else',
-                y: 0.2
-            }]
-        }]
-    });
+		series: [{
+			name: '数量',
+			colorByPoint: true,
+			// allowPointSelect: true,
+			point: {
+				events: {
+					mouseOver: function() {
+						// this.hide();
+						this.select(true);
+						// console.log(this);
+					}
+				}
+			},
+			data: [{
+				name: 'IE',
+				y: 56.33
+			}, {
+				name: 'Chrome',
+				y: 24.03,
+				sliced: true,
+				selected: true
+			}, {
+				name: 'Firefox',
+				y: 10.38
+			}, {
+				name: 'Safari',
+				y: 4.77
+			}, {
+				name: 'Opera',
+				y: 0.91
+			}, {
+				name: 'else',
+				y: 0.2
+			}]
+		}]
+	});
 
 	Highcharts.chart('container2', {
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie'
-        },
-        title: {
-            text: '恶意行为'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
-            }
-        },
-        credits: {
+		chart: {
+			plotBackgroundColor: null,
+			plotBorderWidth: null,
+			plotShadow: false,
+			type: 'pie'
+		},
+		title: {
+			text: ''
+		},
+		tooltip: {
+			pointFormat: '{series.name}: <b>{point.y}</b><br>占比: <b>{point.percentage:.1f}%</b>'
+		},
+		plotOptions: {
+			pie: {
+				allowPointSelect: true,
+				cursor: 'pointer',
+				dataLabels: {
+					enabled: true,
+					format: '<b>{point.name}</b>',
+					style: {
+						color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+					}
+				}
+			}
+		},
+		credits: {
 			enabled: false
 		},
-        series: [{
-            name: 'Brands',
-            colorByPoint: true,
-            data: [{
-                name: 'IE',
-                y: 56.33
-            }, {
-                name: 'Chrome',
-                y: 24.03,
-                sliced: true,
-                selected: true
-            }, {
-                name: 'Firefox',
-                y: 10.38
-            }, {
-                name: 'Safari',
-                y: 4.77
-            }, {
-                name: 'Opera',
-                y: 0.91
-            }, {
-                name: 'else',
-                y: 0.2
-            }]
-        }]
-    });
+		series: [{
+			name: '数量/占比',
+			colorByPoint: true,
+			point: {
+				events: {
+					mouseOver: function() {
+						// this.hide();
+						this.select(true);
+						// console.log(this);
+					}
+				}
+			},
+			data: [{
+				name: 'IE',
+				y: 56.33
+			}, {
+				name: 'Chrome',
+				y: 24.03,
+				sliced: true,
+				selected: true
+			}, {
+				name: 'Firefox',
+				y: 10.38
+			}, {
+				name: 'Safari',
+				y: 4.77
+			}, {
+				name: 'Opera',
+				y: 0.91
+			}, {
+				name: 'else',
+				y: 0.2
+			}]
+		}]
+	});
 
 	Highcharts.chart('container3', {
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie'
-        },
-        title: {
-            text: '恶意行为'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
-            }
-        },
-        credits: {
+		chart: {
+			plotBackgroundColor: null,
+			plotBorderWidth: null,
+			plotShadow: false,
+			type: 'pie'
+		},
+		title: {
+			text: ''
+		},
+		tooltip: {
+			pointFormat: '{series.name}: <b>{point.y}</b><br>占比: <b>{point.percentage:.1f}%</b>'
+		},
+		plotOptions: {
+			pie: {
+				allowPointSelect: true,
+				cursor: 'pointer',
+				dataLabels: {
+					enabled: true,
+					format: '<b>{point.name}</b>',
+					style: {
+						color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+					}
+				}
+			}
+		},
+		credits: {
 			enabled: false
 		},
-        series: [{
-            name: 'Brands',
-            colorByPoint: true,
-            data: [{
-                name: 'IE',
-                y: 56.33
-            }, {
-                name: 'Chrome',
-                y: 24.03,
-                sliced: true,
-                selected: true
-            }, {
-                name: 'Firefox',
-                y: 10.38
-            }, {
-                name: 'Safari',
-                y: 4.77
-            }, {
-                name: 'Opera',
-                y: 0.91
-            }, {
-                name: 'else',
-                y: 0.2
-            }]
-        }]
-    });
+		series: [{
+			name: '数量/占比',
+			colorByPoint: true,
+			point: {
+				events: {
+					mouseOver: function() {
+						// this.hide();
+						this.select(true);
+						// console.log(this);
+					}
+				}
+			},
+			data: [{
+				name: 'IE',
+				y: 56.33
+			}, {
+				name: 'Chrome',
+				y: 24.03,
+				sliced: true,
+				selected: true
+			}, {
+				name: 'Firefox',
+				y: 10.38
+			}, {
+				name: 'Safari',
+				y: 4.77
+			}, {
+				name: 'Opera',
+				y: 0.91
+			}, {
+				name: 'else',
+				y: 0.2
+			}]
+		}]
+	});
 
 	Highcharts.chart('container4', {
 		chart: {
 			type: 'column'
 		},
 		title: {
-			text: '热门库Top10'
+			text: ''
 		},
 		subtitle: {
 			text: ''
@@ -182,7 +207,7 @@ $(function() {
 			labels: {
 				rotation: -45,
 				style: {
-					fontSize: '13px',
+					fontSize: '12px',
 					fontFamily: 'Verdana, sans-serif'
 				}
 			}
@@ -190,7 +215,7 @@ $(function() {
 		yAxis: {
 			min: 0,
 			title: {
-				text: '占有率'
+				text: '数量'
 			}
 		},
 		legend: {
@@ -224,7 +249,7 @@ $(function() {
 				format: '{point.y:.1f}', // one decimal
 				y: 10, // 10 pixels down from the top
 				style: {
-					fontSize: '13px',
+					fontSize: '12px',
 					fontFamily: 'Verdana, sans-serif'
 				}
 			}
@@ -236,7 +261,7 @@ $(function() {
 			type: 'column'
 		},
 		title: {
-			text: '热门库Top10'
+			text: ''
 		},
 		subtitle: {
 			text: ''
@@ -246,7 +271,7 @@ $(function() {
 			labels: {
 				rotation: -45,
 				style: {
-					fontSize: '13px',
+					fontSize: '12px',
 					fontFamily: 'Verdana, sans-serif'
 				}
 			}
@@ -254,7 +279,7 @@ $(function() {
 		yAxis: {
 			min: 0,
 			title: {
-				text: '占有率'
+				text: '数量'
 			}
 		},
 		legend: {
@@ -288,7 +313,7 @@ $(function() {
 				format: '{point.y:.1f}', // one decimal
 				y: 10, // 10 pixels down from the top
 				style: {
-					fontSize: '13px',
+					fontSize: '12px',
 					fontFamily: 'Verdana, sans-serif'
 				}
 			}
@@ -301,7 +326,7 @@ $(function() {
 			type: 'column'
 		},
 		title: {
-			text: '热门库Top10'
+			text: ''
 		},
 		subtitle: {
 			text: ''
@@ -311,7 +336,7 @@ $(function() {
 			labels: {
 				rotation: -45,
 				style: {
-					fontSize: '13px',
+					fontSize: '12px',
 					fontFamily: 'Verdana, sans-serif'
 				}
 			}
@@ -319,7 +344,7 @@ $(function() {
 		yAxis: {
 			min: 0,
 			title: {
-				text: '占有率'
+				text: '数量'
 			}
 		},
 		legend: {
@@ -353,7 +378,7 @@ $(function() {
 				format: '{point.y:.1f}', // one decimal
 				y: 10, // 10 pixels down from the top
 				style: {
-					fontSize: '13px',
+					fontSize: '12px',
 					fontFamily: 'Verdana, sans-serif'
 				}
 			}

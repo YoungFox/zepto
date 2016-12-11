@@ -12,15 +12,18 @@
 <header class="hd g-clearfix">
 	<a class="logo" href="./home.html"></a>
 	<a class="nav-btn log-out"><div class="btn-i">注销</div></a>
-	<a class="nav-btn user"><div class="btn-i"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div></a>
+	<div class="dropdown nav-btn user">
+		<div class="btn-i" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img class="avatar" src="../resources/img/avatar.png" alt="" />admin</div>
+	  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	    <li><a href="./change.html">修改密码</a></li>
+	  </ul>
+	</div>
 	<a class="nav-btn statistics" href="./statistics.html"><div class="btn-i">统计分析</div></a>
 	<a class="nav-btn analysis" href="./analysis.html"><div class="btn-i">应用分析</div></a>
 </header>
 <ol class="breadcrumb">
 	<li><a href="./home.html">主页</a></li>
-	<li class="active">软件漏洞分析</li>
-	<li class="active">安卓应用分析</li>
-	<li class="active">分析详情</li>
+	<li class="active">手工录入</li>
 </ol>
 <section class="bd">
 	<div class="brief">
@@ -40,7 +43,7 @@
 		</div>
 		<div class="panel panel-default d-auth-l">
 			<div class="panel-heading">
-				应用权限列表
+				危险权限列表
 			</div>
 			<div class="panel-body">
 				<ul class="d-auth-list">
@@ -71,6 +74,7 @@
 		<div class="tab-content">
 		<div role="tabpanel" class="tab-pane active" id="tab1">
 			<div class="pro-list g-clearfix">
+				<div class="table-wrap">
 				<table class="table table-striped bd-table">
 				  	<thead> 
 				  		<tr>
@@ -86,7 +90,124 @@
 				  			<td scope="row">1</td> 
 				  			<td>淫秽色情</td> 
 				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
-				  			<td><img src="" alt=""></td> 
+				  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+				  			<td>
+				  				<button type="submit" class="btn btn-danger">高危</button>
+				  			</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td>淫秽色情</td> 
+				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+				  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+				  			<td>
+				  				<button type="submit" class="btn btn-danger">高危</button>
+				  			</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td>淫秽色情</td> 
+				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+				  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+				  			<td>
+				  				<button type="submit" class="btn btn-danger">高危</button>
+				  			</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td>淫秽色情</td> 
+				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+				  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+				  			<td>
+				  				<button type="submit" class="btn btn-danger">高危</button>
+				  			</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td>淫秽色情</td> 
+				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+				  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+				  			<td>
+				  				<button type="submit" class="btn btn-danger">高危</button>
+				  			</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td>淫秽色情</td> 
+				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+				  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+				  			<td>
+				  				<button type="submit" class="btn btn-danger">高危</button>
+				  			</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td>淫秽色情</td> 
+				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+				  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+				  			<td>
+				  				<button type="submit" class="btn btn-danger">高危</button>
+				  			</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td>淫秽色情</td> 
+				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+				  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+				  			<td>
+				  				<button type="submit" class="btn btn-danger">高危</button>
+				  			</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td>淫秽色情</td> 
+				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+				  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+				  			<td>
+				  				<button type="submit" class="btn btn-danger">高危</button>
+				  			</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td>淫秽色情</td> 
+				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+				  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+				  			<td>
+				  				<button type="submit" class="btn btn-danger">高危</button>
+				  			</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td>淫秽色情</td> 
+				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+				  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+				  			<td>
+				  				<button type="submit" class="btn btn-danger">高危</button>
+				  			</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td>淫秽色情</td> 
+				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+				  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+				  			<td>
+				  				<button type="submit" class="btn btn-danger">高危</button>
+				  			</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td>淫秽色情</td> 
+				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+				  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
+				  			<td>
+				  				<button type="submit" class="btn btn-danger">高危</button>
+				  			</td> 
+				  		</tr> 
+				  		<tr> 
+				  			<td scope="row">1</td> 
+				  			<td>淫秽色情</td> 
+				  			<td>淫秽色情淫秽色情淫秽色情淫秽色情淫秽色情</td> 
+				  			<td><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /><img class="evidence-img" src="../resources/img/appico.png" alt="" data-toggle="modal" data-target="#expandModal" data-whatever="../resources/img/appico.png" /></td> 
 				  			<td>
 				  				<button type="submit" class="btn btn-danger">高危</button>
 				  			</td> 
@@ -94,8 +215,9 @@
 				  		
 				  	</tbody>
 				</table>
+				</div>
 				<select name="" id="" class="s-d-l">
-					<option value="选择危害等级">选择危害等级</option>
+					<option value="请选择危害等级">请选择危害等级</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>

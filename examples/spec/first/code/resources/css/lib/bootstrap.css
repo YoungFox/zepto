@@ -1774,7 +1774,6 @@ pre code {
 .col-xs-offset-0 {
   margin-left: 0;
 }
-@media (min-width: 768px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
@@ -1931,7 +1930,6 @@ pre code {
   .col-sm-offset-0 {
     margin-left: 0;
   }
-}
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
@@ -2978,13 +2976,13 @@ select[multiple].input-lg {
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {*/
   .form-horizontal .control-label {
     padding-top: 7px;
     margin-bottom: 0;
     text-align: right;
   }
-}
+/*}*/
 .form-horizontal .has-feedback .form-control-feedback {
   right: 15px;
 }
@@ -4741,9 +4739,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-bottom-right-radius: 4px;
 }
 .pagination > li > a:hover,
-.pagination > li > span:hover,
-.pagination > li > a:focus,
-.pagination > li > span:focus {
+.pagination > li > span:hover
+ {
   z-index: 2;
   color: #23527c;
   background-color: #eee;

@@ -17,12 +17,14 @@ $(function() {
             plotShadow: false
         },
         title: {
-            text: '高:中:低<br><span style="font-size: 12px;color: #333">3:1:1</span>',
+            text: '高:中:低<br><span style="font-size: 12px;color: #c8c8c8">3:1:1</span>',
             align: 'center',
             verticalAlign: 'middle',
             style: {
-                fontSize: 18
-            }
+                fontSize: 16,
+                color: '#418cd3'
+            },
+            y: 20
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -31,15 +33,15 @@ $(function() {
             pie: {
                 dataLabels: {
                     enabled: true,
-                    distance: 5,
+                    distance: 10,
                     style: {
-                        fontWeight: 'bold',
+                        fontWeight: 'normal',
                         color: 'white'
                     }
                 },
                 startAngle: -90,
                 endAngle: 270,
-                center: ['50%', '50%']
+                center: ['50%', '60%']
             }
         },
         credits: {
@@ -48,19 +50,30 @@ $(function() {
         series: [{
             type: 'pie',
             name: '漏洞',
-            innerSize: '50%',
+            innerSize: '60%',
+           
+            // dataLabels:[{color: 'red'},{color: 'green'},{color: 'blue'}],
             data: [{
-                name: '高危',
+                name: '高危问题',
                 y: 10.38,
-                color: '#ed462f'
+                color: '#ed462f',
+                dataLabels: {
+                    color: '#ed462f'
+                }
             }, {
-                name: '中危',
+                name: '中危问题',
                 y: 56.33,
-                color: '#365cd1'
+                color: '#365cd1',
+                dataLabels: {
+                    color: '#365cd1'
+                }
             }, {
-                name: '高危',
+                name: '高危问题',
                 y: 24.03,
-                color: '#60cb6d'
+                color: '#60cb6d',
+                dataLabels: {
+                    color: '#60cb6d'
+                }
             }]
         }]
     });

@@ -10,9 +10,15 @@
 }
 .panel-default{
 	width: 426px;
-	margin-left: 760px;
+	margin-left: 60%;
 	background: #ebf6fd;
 }
+@media (max-width: 767px) {
+	.panel-default{
+		margin-left: 20%;
+	}
+}
+
 .panel-heading{
 	height: 62px;
 	background: #ebf6fd!important;

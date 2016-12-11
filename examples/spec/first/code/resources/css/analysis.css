@@ -193,9 +193,12 @@
 	overflow: scroll;
 }
 .det-content .table > thead > tr > th{
+	vertical-align: middle;
 	border: 0;
+	border-top: 1px dashed #f3f6f8!important;
 }
 .det-content .table > tbody > tr > td{
+	vertical-align: middle;
 	border-top: 1px dashed #f3f6f8;
 }
 .det-content .btn{
@@ -303,4 +306,39 @@
 }
 #collapseThree .nav-pills > li.active > a,#collapseThree .nav-pills > li.active > a:hover{
 	background: #fff;
+}
+
+#collapseTwo .nav-tabs > li.active > a, #collapseTwo .nav-tabs > li.active > a:hover, #collapseTwo .nav-tabs > li.active > a:focus{
+	color: #296fcd;
+    border-bottom: 3px solid #296fcd;
+    background: #f3f3f3;
+}
+#collapseTwo .nav,#collapseThree .nav{
+	background: #f3f3f3;
+}
+.presentation0 a{
+	background: #f3f3f3!important;
+}
+.presentation0:after{
+	content: '';
+	display: block;
+	position: absolute;
+	height: 20px;
+	width: 1px;
+	background: #dcdbdb;
+	top: 9px;
+}
+.presentation0:nth-of-type(1):after{
+	display: none;
+}
+.d-a-img{
+	width: 100%;
+	max-height: 600px;
+}
+.panel-collapse .nav-tabs{
+	border-bottom: 0;
+}
+.path-img{
+	width: 100%;
+	max-height: 600px;
 }
