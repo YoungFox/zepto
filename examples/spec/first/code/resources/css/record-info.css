@@ -125,13 +125,13 @@
 	background: #ededed;
 }
 .file-wrap input{
-	opacity: 0;
+	/*opacity: 0;
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 2
+	z-index: 2*/
 }
 .file-add{
 	display: block;
@@ -145,4 +145,26 @@
 	left: 30px;
 	font-size: 20px;
 	z-index: 1;
+}
+.files-name-list{
+	margin: 0 20px 10px 80px;
+	padding: 10px 0 0 0;
+	height: 62px;
+	overflow: scroll;
+	line-height: 26px;
+	word-break: break-all;
+}
+.files-name-list span{
+	padding: 0 5px;
+	border-right: 1px solid #31b0d5;
+}
+.files-name-list span:nth-of-type(1){
+	padding-left: 0;
+}
+.files-name-list span:last-child{
+	border: 0;
+}
+#uploadFileX{
+	position:absolute;
+	clip:rect(0 0 0 0);
 }
