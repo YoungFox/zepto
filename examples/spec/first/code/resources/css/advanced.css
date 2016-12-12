@@ -252,14 +252,7 @@ i.icon{
 	vertical-align: middle;
 }
 
-#expandModal{
-	margin-top: 40px;
-}
-.expand-img{
-	height: 480px;
-	max-width: 800px;
-	width: 100%;
-}
+
 .img-tips{
 	margin: 0;
 	padding: 0;
@@ -295,4 +288,10 @@ i.icon{
 }
 #container1{
 	padding: 0;
+}
+.d-auth-l .panel-body{
+	height: 140px;
+}
+.btn-dan-nofloat{
+	float: none!important;
 }

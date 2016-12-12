@@ -9,6 +9,7 @@
 	/*height: 100%;*/
 	margin-right: 8px;
 	background: #fff;
+	margin-bottom: 20px;
 }
 .detail{
 	flex: 1;
@@ -203,6 +204,7 @@
 }
 .det-content .btn{
 	float: none;
+	margin: 0;
 }
 
 .d-auth-i{
@@ -341,4 +343,22 @@
 .path-img{
 	width: 100%;
 	max-height: 600px;
+}
+.d-o-d-t{
+	padding: 10px 0;
+	text-indent: 10px;
+	border-bottom: 1px dashed #f3f6f8!important;
+}
+.sus-path{
+	width: 184px;
+	height: 40px;
+}
+#home-third thead{
+	background: #f3f3f3!important;
+}
+#home-third{
+	background: #fff;
+}
+#home-third .table{
+	margin-bottom: 0;
 }

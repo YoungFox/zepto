@@ -113,7 +113,36 @@
 	width: 170px;
 	border-radius: 0!important;
 	height: 50px;
+	-webkit-appearance: menulist-button;
+	border: 1px solid #c5cbd1;
+	background: #fff;
 }
 .inputLevel-label{
 	padding-top: 15px!important;
+}
+.file-wrap{
+	height: 72px;
+	background: #ededed;
+}
+.file-wrap input{
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2
+}
+.file-add{
+	display: block;
+	height: 48px;
+	width: 48px;
+	border: 1px dashed #c0bfbf;
+	line-height: 48px;
+	text-align: center;
+	position: absolute;
+	top: 12px;
+	left: 30px;
+	font-size: 20px;
+	z-index: 1;
 }

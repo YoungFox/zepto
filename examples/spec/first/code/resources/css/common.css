@@ -206,8 +206,9 @@ a{
 	margin-top: 9px;
 }
 .d-auth-l .panel-body{
-	height: 140px;
+	/*height: 140px;*/
 	overflow: scroll;
+	max-height: 280px;
 }
 .d-auth-l .panel-heading{
 	border-top: 3px solid #e60012;
@@ -256,4 +257,53 @@ a{
 	height: 22px;
 	width: 22px;
 	margin-right: 4px;
+}
+
+.btn-danger1{
+	color: #b83422;
+	background: #fff;
+	border: 1px solid #b83422;
+	border-radius: 0;
+}
+.btn-danger1:hover{
+	background: #b83422;
+	border: 1px solid #b83422;
+	color: #fff;
+}
+.btn-danger2{
+	color: #296fcd;
+	background: #fff;
+	border: 1px solid #296fcd;
+	border-radius: 0;
+}
+
+.btn-danger2:hover{
+	background: #296fcd;
+	border: 1px solid #296fcd;
+	color: #fff;
+}
+.btn-danger3{
+	color: #51ab44;
+	background: #fff;
+	border: 1px solid #51ab44;
+	border-radius: 0;
+}
+
+.btn-danger3:hover{
+	background: #51ab44;
+	border: 1px solid #51ab44;
+	color: #fff;
+}
+
+#expandModal{
+	margin-top: 40px;
+}
+.expand-img{
+	height: 480px;
+	max-width: 800px;
+	width: 100%;
+}
+.code-img{
+	width: 156px;
+	height: 40px;
 }

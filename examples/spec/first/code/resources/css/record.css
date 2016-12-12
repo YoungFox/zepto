@@ -99,6 +99,9 @@
 	height: 38px;
 	float: left;
 	margin-right: 10px;
+	-webkit-appearance: menulist-button;
+	border: 1px solid #c5cbd1;
+	background: #fff;
 }
 .btn-score{
 	position: relative;
@@ -118,4 +121,8 @@
 	height: 500px;
 	overflow: scroll;
 	margin-bottom: 30px;
+}
+.detail .bd-table .btn{
+	float: none;
+	margin: 0;
 }

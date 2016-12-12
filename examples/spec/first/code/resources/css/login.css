@@ -9,16 +9,15 @@
 	background-position: 0 120px;
 }
 .panel-default{
-	width: 426px;
-	margin-left: 60%;
+	position: absolute;
+	right: 180px;
+	top: 126px;
 	background: #ebf6fd;
+	overflow: hidden;
 }
-@media (max-width: 767px) {
-	.panel-default{
-		margin-left: 20%;
-	}
+.login-panel{
+	width: 416px;
 }
-
 .panel-heading{
 	height: 62px;
 	background: #ebf6fd!important;
