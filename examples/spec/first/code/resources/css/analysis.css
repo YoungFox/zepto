@@ -14,6 +14,7 @@
 .detail{
 	flex: 1;
 	height: 100%;
+	min-height: 676px;
 }
 .breadcrumb{
 	margin: 0;
@@ -27,6 +28,7 @@
 }
 .det-content{
 	background: #faf9fa;
+	min-height: 606px;
 }
 .app-img-wrap{
 	width: 100%;
@@ -121,9 +123,11 @@
 	background-position: 0 -220px;
 }
 .work-flow{
+	position: relative;
 	height: 268px;
-	background: url(../img/workflow.png) no-repeat;
+	/*background: url(../img/workflow.png) no-repeat;*/
 	background-position: 24px 24px;
+	overflow: hidden;
 }
 .analysis-wrap{
 	padding: 0 15px;
@@ -139,7 +143,7 @@
 }
 .analysis-title .btn{
 	float: right!important;
-	margin-top: 9px;
+	margin-top: 9px!important;
 	height: 26px;
 	border: none;
 	line-height: 26px;
@@ -189,10 +193,10 @@
 .panel-collapse{
 	background: #fff;
 }
-.panel-collapse .panel-body{
+/*.panel-collapse .panel-body{
 	height: 268px;
 	overflow: scroll;
-}
+}*/
 .det-content .table > thead > tr > th{
 	vertical-align: middle;
 	border: 0;
@@ -361,4 +365,104 @@
 }
 #home-third .table{
 	margin-bottom: 0;
+}
+.step{
+	position: absolute;
+	width: 96px;
+	height: 93px;
+	top: 94px;
+    left: 28px;
+    background: url(../img/1-1.png)
+}
+.step4,.step5,.step6,.step7,.step8,.step9{
+	width: 142px;
+}
+.step10{
+	left: 903px;
+    top: 29px;
+    background: url(../img/10-2.png)
+}
+.step9{
+	left: 738px;
+    top: 153px;
+    background: url(../img/9-2.png)
+}
+.step8{
+	left: 571px;
+    top: 153px;
+    background: url(../img/8-2.png)
+}
+.step7{
+	left: 403px;
+    top: 153px;
+    background: url(../img/7-1.png)
+}
+.step6{
+	left: 738px;
+    top: 29px;
+    background: url(../img/6-2.png)
+}
+.step5{
+	left: 571px;
+    top: 29px;
+    background: url(../img/5-1.png)
+}
+.step4{
+	left: 403px;
+    top: 29px;
+    background: url(../img/4-1.png)
+}
+.step3{
+	left: 270px;
+	background: url(../img/3-1.png)
+}
+.step2{
+	left: 148px;
+	background: url(../img/2-1.png)
+}
+.link-line{
+	position: absolute;
+	height: 14px;
+	width: 38px;
+	background: url(../img/line1.png) no-repeat;
+	top: 133px;
+    left: 116px;
+}
+.link-line2{
+	left: 238px;
+}
+
+.link-line3{
+	width: 50px;
+	height: 140px;
+	top: 60px;
+	left: 360px;
+	 background: url(../img/line3.png)  no-repeat;
+}
+.link-line4{
+	left: 539px;
+    top: 62px;
+}
+
+.link-line5{
+	left: 708px;
+    top: 62px;
+    background: url(../img/line2.png)  no-repeat;
+}
+
+.link-line6{
+	left: 539px;
+    top: 190px;
+    background: url(../img/line2.png)  no-repeat;
+}
+.link-line7{
+	left: 708px;
+    top: 190px;
+    background: url(../img/line2.png)  no-repeat;
+}
+
+.link-line8{
+	left: 873px;
+    top: 62px;
+    background: url(../img/line2.png)  no-repeat;
 }

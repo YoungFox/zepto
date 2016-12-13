@@ -86,3 +86,26 @@
 	right: -14px;
 	top: 1px;
 }
+.login-logo{
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 78px;
+	width: 100%;
+	background: #fff url(../img/logo2.png) no-repeat;
+	background-position: 102px 22px;
+}
+footer{
+	position: absolute;
+	height: 78px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	padding: 0 176px 0 90px;
+	background: #fff;
+	line-height: 78px;
+}
+
+footer .else{
+	float: right;
+}

@@ -56,23 +56,23 @@ $(function() {
             data: [{
                 name: '高危问题',
                 y: 10.38,
-                color: '#ed462f',
+                color: '#e60012',
                 dataLabels: {
-                    color: '#ed462f'
+                    color: '#e60012'
                 }
             }, {
                 name: '中危问题',
                 y: 56.33,
-                color: '#365cd1',
+                color: '#ff7800',
                 dataLabels: {
-                    color: '#365cd1'
+                    color: '#ff7800'
                 }
             }, {
                 name: '高危问题',
                 y: 24.03,
-                color: '#60cb6d',
+                color: '#fec80f',
                 dataLabels: {
-                    color: '#60cb6d'
+                    color: '#fec80f'
                 }
             }]
         }]

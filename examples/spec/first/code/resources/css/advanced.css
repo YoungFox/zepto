@@ -127,8 +127,10 @@
 	border-bottom: 3px solid #375dd1!important;
 }
 .h-img-list{
-	padding-left: 22px;
-	margin-top: 20px;
+	/*padding-left: 22px;*/
+	margin: 20px auto;
+	padding: 0;
+	width: 394px;
 }
 .h-img-list .img-item{
 	width: 110px;
@@ -142,6 +144,9 @@
 	background-size: contain;
 	text-align: center;
 	line-height: 35px;
+}
+.h-img-list .img-item:nth-of-type(3){
+	margin-right: 0;
 }
 .img-item span{
 	display: inline-block;
@@ -274,14 +279,14 @@ i.icon{
 	height: 20px;
 	width: 20px;
 	margin-right: 6px;
-	background: #ed462f;
+	background: #e60012;
 	vertical-align: middle;
 }
 .tips-item:nth-of-type(2) .color-cubic{
-	background: #375dd1;
+	background: #ff7800;
 }
 .tips-item:nth-of-type(3) .color-cubic{
-	background: #5fcb6d;
+	background: #fec80f;
 }
 .pro-pie-wrap{
 	position: relative;
