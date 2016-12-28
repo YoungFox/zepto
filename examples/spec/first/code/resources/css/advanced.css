@@ -8,11 +8,11 @@
 	width: 220px;
 	/*height: 100%;*/
 	margin-right: 8px;
-	background: #dde6ec;
+	background: #fff;
 }
 .detail{
 	flex: 1;
-	height: 100%;
+	background: #fff;
 }
 .breadcrumb{
 	margin: 0;
@@ -20,11 +20,11 @@
 	background: #dde6ec;
 }
 .det-header{
-	margin-bottom: 6px;
+	border-bottom: 6px solid #dde6ec;
 	background: #eff2f4;
 }
 .det-content{
-	margin-top: 8px;
+	/*margin-top: 8px;*/
 	background: #f3f4f4;
 }
 .app-img-wrap{
@@ -48,6 +48,7 @@
 	background: #fff;
 	height: 222px;
 	overflow: hidden;
+	border-bottom: 9px solid #dde6ec;
 }
 .app-bri-item{
 	color: #999;
@@ -96,7 +97,6 @@
 	display: flex;
 }
 .tab-pane-s{
-	height: 340px;
 	background: #fff;
 }
 .tab-pane-wrap.active{
@@ -105,12 +105,15 @@
 .tab-pane-wrap{
 	background: #f3f4f4;
 }
+.tab-content-inner{
+	/*overflow: scroll;*/
+}
 .pro-pie-wrap{
 	width: 314px;
 	margin-right: 16px;
 }
 .det-content .nav-head{
-	margin: 8px 0 15px;
+	margin: 0px 0 15px;
 	background: #faf9fa;
 	height: 40px;
 }
@@ -295,8 +298,13 @@ i.icon{
 	padding: 0;
 }
 .d-auth-l .panel-body{
-	height: 140px;
+	/*height: 140px;*/
+	max-height: auto;
+	overflow: auto;
 }
 .btn-dan-nofloat{
 	float: none!important;
+}
+.d-auth-l{
+	margin-top: 0;
 }
